@@ -1,0 +1,3 @@
+ts=2024-10-10T12:00:00Z level=info service=gateway msg="route ok" path=/api
+ts=2024-10-10T12:00:01Z level=error service=gateway msg="upstream timeout" path=/api/cart
+ts=2024-10-10T12:00:02Z level=warn service=gateway msg="retrying" attempt=2

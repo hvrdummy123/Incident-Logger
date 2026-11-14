@@ -1,0 +1,5 @@
+{"ts":"2024-10-10T12:00:00Z","service":"checkout","level":"INFO","message":"request started","trace_id":"abc"}
+{"ts":"2024-10-10T12:00:01Z","service":"checkout","level":"ERROR","message":"payment failed for order 12345","trace_id":"abc"}
+{"ts":"2024-10-10T12:00:02Z","service":"payments","level":"ERROR","msg":"connection refused to payments-db"}
+not-json-line-should-count-as-unparsed
+{"ts":"2024-10-10T12:00:03Z","service":"checkout","level":"INFO","message":"request done"}

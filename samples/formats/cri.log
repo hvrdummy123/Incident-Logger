@@ -1,0 +1,3 @@
+2024-10-10T12:00:00.000000000Z stdout F {"level":"info","msg":"listening on :8080"}
+2024-10-10T12:00:01.000000000Z stderr F connection refused to catalog-db:5432
+2024-10-10T12:00:02.000000000Z stdout F {"level":"error","msg":"handler failed"}
