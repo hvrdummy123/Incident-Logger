@@ -79,6 +79,10 @@ strict = true
 mypy_path = "src"
 packages = ["traceiq"]
 
+[[tool.mypy.overrides]]
+module = ["pyarrow", "pyarrow.*", "duckdb"]
+ignore_missing_imports = true
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 markers = [

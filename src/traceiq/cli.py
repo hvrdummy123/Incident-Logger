@@ -103,7 +103,92 @@ def doctor(
         console.print("[yellow]verdict: code ok; start Postgres for full stack[/yellow]")
 
 
-# Placeholders so --help documents the eventual surface (wired in later milestones).
+@app.command("ingest")
+def ingest_cmd(
+    paths: Annotated[list[str], typer.Argument(help="Log files to ingest")],
+    format: Annotated[
+        str | None,
+        typer.Option("--format", help="Force format (jsonl|logfmt|nginx|cri|syslog|plain)"),
+    ] = None,
+    dry_run: Annotated[
+        bool,
+        typer.Option("--dry-run/--no-dry-run", help="Parse only; no write (default: dry-run)"),
+    ] = True,
+    workspace_id: Annotated[
+        str | None,
+        typer.Option("--workspace", help="Workspace id (required unless --dry-run)"),
+    ] = None,
+) -> None:
+    """Ingest log files. Default is --dry-run (parse report only)."""
+    import json
+    from pathlib import Path
+
+    from rich import print_json
+
+    from traceiq.config import get_settings
+    from traceiq.ids import new_ulid
+    from traceiq.ingest.pipeline import ingest_file
+
+    settings = get_settings()
+    if not dry_run and not workspace_id:
+        console.print("[red]--workspace is required when not using --dry-run[/red]")
+        raise typer.Exit(2)
+
+    for raw in paths:
+        path = Path(raw)
+        if not path.is_file():
+            console.print(f"[red]not a file: {path}[/red]")
+            raise typer.Exit(2)
+        result = ingest_file(
+            path,
+            fmt=format,
+            dry_run=dry_run,
+            data_dir=Path(settings.data_dir),
+            workspace_id=workspace_id,
+            dataset_id=None if dry_run else new_ulid(),
+        )
+        console.print(
+            f"[bold]{path.name}[/bold] format={result.report.format} "
+            f"confidence={result.report.detect_confidence:.2f}"
+        )
+        print_json(json.dumps(result.report.to_dict()))
+        if result.dataset_path:
+            console.print(f"wrote dataset → {result.dataset_path}")
+
+
+@app.command("audit")
+def audit_verify(
+    workspace_id: Annotated[str, typer.Argument(help="Workspace to verify")],
+) -> None:
+    """Verify the hash-chained audit log for a workspace."""
+    from sqlalchemy import create_engine
+    from sqlalchemy.orm import sessionmaker
+
+    from traceiq.audit.chain import verify_chain
+    from traceiq.config import get_settings
+
+    settings = get_settings()
+    engine = create_engine(settings.database_url, pool_pre_ping=True)
+    session = sessionmaker(bind=engine)()
+    try:
+        from sqlalchemy import text
+
+        session.execute(
+            text("SELECT set_config('app.workspace_id', :wid, true)"),
+            {"wid": workspace_id},
+        )
+        result = verify_chain(session, workspace_id)
+    finally:
+        session.close()
+    if result.ok:
+        console.print(f"[green]audit chain ok[/green] ({result.checked} records)")
+    else:
+        console.print(
+            f"[red]audit chain broken[/red] at seq={result.first_break_seq}: {result.reason}"
+        )
+        raise typer.Exit(1)
+
+
 demo_app = typer.Typer(help="Demo incident bundles")
 app.add_typer(demo_app, name="demo")
 

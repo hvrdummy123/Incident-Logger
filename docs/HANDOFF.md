@@ -2,15 +2,9 @@
 
 ## What exists
 
-- Original TraceIQ repo (no upstream clone). Product TraceIQ; package import `traceiq`; dist name `traceiq-incident`.
-- **M0:** skeleton, Makefile, CI, compose Postgres on host port **55432**, doctor CLI, clock/config/ids.
-- **M1:** SQLAlchemy models, Alembic `a2434ce35bd5`, RLS + audit immutability triggers, hash-chained audit, SKIP LOCKED queue (claim committed before work), local auth (argon2 + JWT), RBAC helpers, `traceiq_app` non-superuser role for real RLS.
-- Tests: `tests/unit` green (clock/ids/config + audit/queue/auth/RLS).
-
-## Half-done
-
-- OIDC validate helper exists; JWKS fetch and route wiring wait for M8.
-- API/worker processes not started yet.
+- Original TraceIQ repo. M0–M2 landed.
+- **Tenancy (security):** app-scoped getters, Postgres RLS via `traceiq_app`, filesystem sandbox under `data/<workspace_id>/`. See `docs/THREAT_MODEL.md`. Tests in `tests/security/test_tenancy_isolation.py`.
+- **Ingest:** jsonl/logfmt/nginx/cri/syslog/plain + stack grouping, format detect, Drain, parse report, Parquet writer, DuckDB query, `traceiq ingest --dry-run`.
 
 ## How to run
 
@@ -18,17 +12,18 @@
 docker compose up -d postgres
 PGPASSWORD=traceiq psql -h 127.0.0.1 -p 55432 -U traceiq -d traceiq -f scripts/init_app_role.sql
 TRACEIQ_MIGRATE_URL=postgresql+psycopg://traceiq:traceiq@localhost:55432/traceiq uv run alembic upgrade head
-uv run pytest tests/unit -q
+uv run pytest tests/unit tests/ingest tests/security -q
+uv run traceiq ingest samples/formats/jsonl.log --dry-run
 uv run traceiq doctor
 ```
 
 ## Known problems
 
-- Host ports 5432/5433 were already taken locally; compose uses **55432**.
-- Docker bootstrap user `traceiq` is a superuser (bypasses RLS). Runtime must use `traceiq_app`.
+- Runtime DB URL must use `traceiq_app` (not superuser `traceiq`) or RLS is bypassed.
+- Host Postgres port is **55432**.
 
 ## Next 3 steps
 
-1. M2: format parsers, Drain, Parquet writer, DuckDB queries, `ingest --dry-run`.
-2. M3 analytics briefing pipeline.
-3. M4 simulator + demo bundles.
+1. M3 analytics (anomalies, suspects, timeline, compare_windows).
+2. M4 simulator + demos.
+3. M6/M8 keep hammering cross-tenant API tests as routes appear.
