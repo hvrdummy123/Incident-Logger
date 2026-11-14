@@ -28,8 +28,16 @@ Focus: **tenant isolation**. A user in company A must not read, modify, or delet
 - `tests/security/test_tenancy_isolation.py` — RLS read/update/delete denied across workspaces; path traversal blocked; app scope returns None for foreign IDs.
 - `tests/unit/test_audit_queue_auth.py` — RLS hide other workspace incidents.
 
+## Model egress (M6)
+
+- All provider calls go through `safety/egress.py` only.
+- Content is redacted before send; gateway asserts originals are absent from the payload.
+- `TRACEIQ_NO_EXTERNAL_LLM=1` blocks non-mock providers and records a ledger row (`blocked`).
+- Prompt-injection-shaped log lines are flagged into the report (`injection_suspected`), never executed.
+
 ## What we still must not mess up (M8+)
 
 - Never connect the API/worker as a DB superuser.
 - Every route that takes an id must use scoped getters (matrix test will fail open routes).
 - Dataset delete must resolve through `resolve_in_workspace` then remove only that tree.
+- Do not import provider SDKs from outside `agent/providers/` or call them outside the egress gateway.

@@ -1,0 +1,8 @@
+# VERIFY against the provider’s pricing page before trusting cost reports.
+# Placeholder prices — reports must warn if these remain.
+mock:
+  mock-v1: {input_per_mtok: 0.0, output_per_mtok: 0.0}
+anthropic:
+  placeholder: {input_per_mtok: 3.0, output_per_mtok: 15.0}  # VERIFY
+openai:
+  placeholder: {input_per_mtok: 2.5, output_per_mtok: 10.0}  # VERIFY

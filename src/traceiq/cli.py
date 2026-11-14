@@ -156,6 +156,22 @@ def ingest_cmd(
             console.print(f"wrote dataset → {result.dataset_path}")
 
 
+@app.command("redact-preview")
+def redact_preview_cmd(
+    file: Annotated[str, typer.Argument(help="File to preview redaction on")],
+) -> None:
+    """Show what would be redacted before any model call."""
+    import json
+    from pathlib import Path
+
+    from rich import print_json
+
+    from traceiq.safety.redact import redaction_preview
+
+    text = Path(file).read_text(encoding="utf-8", errors="replace")
+    print_json(json.dumps(redaction_preview(text)))
+
+
 @app.command("audit")
 def audit_verify(
     workspace_id: Annotated[str, typer.Argument(help="Workspace to verify")],

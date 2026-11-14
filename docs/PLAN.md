@@ -9,9 +9,9 @@ Working from `incident_agent_prompt.md`. Product name is **TraceIQ**. Original c
 - [x] **M2 Ingest and store** (+ tenancy security tests)
 - [x] **M3 Analytics**
 - [x] **M4 Simulator and demos**
-- [x] **M5 Baselines and eval harness** (oracle 100%; decoys defeat latest_deploy)
-- [ ] **M6 Safety** — redaction, egress, injection
-- [ ] **M7 Agent runtime**
+- [x] **M5 Baselines and eval harness**
+- [x] **M6 Safety** — redaction, egress, injection, NO_EXTERNAL_LLM
+- [x] **M7 Agent runtime** — state machine, tools, mock provider, verifier (core)
 - [ ] **M8 API** — REST + tenancy on every route
 - [ ] **M9 UI**
 - [ ] **M10 Ops**
@@ -20,4 +20,4 @@ Working from `incident_agent_prompt.md`. Product name is **TraceIQ**. Original c
 
 ## Current
 
-Next: **M6**.
+Next: **M8**.
