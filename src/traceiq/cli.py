@@ -175,6 +175,57 @@ def worker_cmd() -> None:
     main()
 
 
+@app.command("seed-user")
+def seed_user_cmd(
+    email: Annotated[str, typer.Option("--email")] = "oncall@example.com",
+    password: Annotated[str, typer.Option("--password")] = "password-password",
+    workspace: Annotated[str, typer.Option("--workspace")] = "local",
+    role: Annotated[str, typer.Option("--role")] = "admin",
+) -> None:
+    """Create a local user + workspace membership for UI login."""
+    from sqlalchemy import create_engine, select
+    from sqlalchemy.orm import sessionmaker
+
+    from traceiq.auth.local import create_user
+    from traceiq.config import get_settings
+    from traceiq.db.models import Membership, Workspace
+    from traceiq.ids import new_ulid
+
+    settings = get_settings()
+    # Prefer migrate URL so seeding works before app-role grants are perfect.
+    url = settings.migrate_url or settings.database_url
+    engine = create_engine(url, pool_pre_ping=True)
+    session = sessionmaker(bind=engine, expire_on_commit=False)()
+    try:
+        ws = session.scalar(select(Workspace).where(Workspace.name == workspace))
+        if ws is None:
+            ws = Workspace(id=new_ulid(), name=workspace)
+            session.add(ws)
+            session.flush()
+        user = create_user(session, email=email, password=password)
+        existing = session.scalar(
+            select(Membership).where(
+                Membership.workspace_id == ws.id, Membership.user_id == user.id
+            )
+        )
+        if existing is None:
+            session.add(
+                Membership(
+                    id=new_ulid(),
+                    workspace_id=ws.id,
+                    user_id=user.id,
+                    role=role,
+                )
+            )
+        session.commit()
+        console.print(
+            f"user={email} workspace_id={ws.id} role={role} "
+            f"(sign in via UI; send X-Workspace-Id={ws.id} if needed)"
+        )
+    finally:
+        session.close()
+
+
 @app.command("redact-preview")
 def redact_preview_cmd(
     file: Annotated[str, typer.Argument(help="File to preview redaction on")],

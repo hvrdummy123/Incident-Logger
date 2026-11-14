@@ -17,13 +17,13 @@ uv run traceiq eval run --suite demo --agents oracle,deterministic,latest_deploy
 
 ## Known problems
 
-- Held-out `test` eval split is empty (n=0).
+- Held-out test split is n=1 (`flag_flip_test_200`); expand before claiming generalization.
 - Live LLM providers not wired; no API keys used.
 - Investigation durability / worker handlers / Playwright still thin.
 - Deterministic miss on cache stampede.
 
 ## Next 3 steps
 
-1. Seed a local user for compose UI login; walk `docs/HUMAN_TEST.md`.
-2. Freeze held-out scenarios; run test split once; update `docs/EVAL.md`.
+1. `uv run traceiq seed-user` then walk `docs/HUMAN_TEST.md` on compose UI.
+2. Expand frozen held-out scenarios (do not retune).
 3. Optional M12: Playwright smoke, Grafana JSON, live provider HTTP.

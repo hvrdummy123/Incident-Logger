@@ -65,7 +65,7 @@ Dev split (`--suite dev`, n=2):
 | deterministic | 0.50 | does not abstain on unsolvable |
 | latest_deploy | 0.00 | fooled on `db_pool_dev_100` |
 
-**Held-out test split:** ran once via `uv run traceiq eval run --suite test …` → **n_scenarios=0** (no scenarios tagged `split=test` yet). No accuracy/CI to report. Regenerating a frozen held-out set is an open next step.
+**Held-out test split:** frozen `flag_flip_test_200`; run once via `uv run traceiq eval run --suite test …` → n=1, all three agents service_top1/category/trigger = **1.00**. Small sample — no CI. Do not retune on this file.
 
 **Real model:** not run. Command when keys exist:
 
@@ -126,6 +126,6 @@ Per prompt cut line, deferred or thin:
 1. `docker compose up -d --build` → open http://localhost:8080 → create a user (CLI/seed) → load demo → run investigation → check citations.
 2. Fill `docs/HUMAN_NOTES.md`; run `docs/HUMAN_TEST.md` checklist.
 3. Record a short GIF of BYO wizard + report.
-4. Add held-out `split=test` scenarios, freeze, run **once**, paste into `docs/EVAL.md`.
+4. Expand frozen held-out set beyond n=1; never retune on `*_test_*.yaml`.
 5. With a real API key, run a small mock→live comparison and budget-capped sweep.
-6. Try BYO on a real (redacted) log sample; file gaps in parse formats.
+6. `uv run traceiq seed-user` then try BYO on a real (redacted) log sample.

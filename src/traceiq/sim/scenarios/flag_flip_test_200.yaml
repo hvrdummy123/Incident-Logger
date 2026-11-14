@@ -1,0 +1,20 @@
+# Frozen held-out case — do not tune agents against this; run once for reporting.
+id: flag_flip_test_200
+seed: 200
+split: test
+duration_min: 100
+incident_window: {start_min: 50, end_min: 90}
+fault: {type: feature_flag, service: checkout, params: {flag: checkout_v2}}
+decoys: [innocent_deploy_before_onset, unrelated_deploy]
+telemetry_gaps: []
+injections: []
+pii: false
+ground_truth:
+  root_cause_service: checkout
+  category: feature_flag
+  trigger_change_id: null
+  onset_min: 55
+  blast_radius: [checkout, cart]
+  gold_templates:
+    - "feature flag checkout_v2 enabled"
+  solvable: true

@@ -22,13 +22,21 @@ uv run traceiq eval run --suite dev --agents oracle,deterministic,latest_deploy
 
 n=2 (`db_pool_dev_100`, `unsolvable_dev_101`). Oracle abstains on unsolvable; deterministic does not.
 
-## Held-out test split
+## Held-out test split (frozen; run once 2026-11-14)
+
+Scenario: `flag_flip_test_200` (feature flag on checkout). Do not retune agents against this file.
 
 ```bash
 uv run traceiq eval run --suite test --agents oracle,deterministic,latest_deploy
 ```
 
-**Result:** `n_scenarios=0`. No frozen held-out cases checked in yet. Do not invent accuracy here.
+| Agent | service_top1 | category_ok | trigger_ok | n |
+| --- | --- | --- | --- | --- |
+| oracle | 1.00 | 1.00 | 1.00 | 1 |
+| deterministic | 1.00 | 1.00 | 1.00 | 1 |
+| latest_deploy | 1.00 | 1.00 | 1.00 | 1 |
+
+Small-sample (n=1). No bootstrap CI computed. Expand the frozen set before claiming generalization.
 
 ## Live LLM
 
