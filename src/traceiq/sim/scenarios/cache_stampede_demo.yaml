@@ -1,0 +1,20 @@
+id: cache_stampede_demo
+seed: 99
+split: demo
+duration_min: 160
+incident_window: {start_min: 100, end_min: 150}
+fault: {type: cache_stampede, service: redis-cache, params: {}}
+decoys: [unrelated_deploy, innocent_deploy_before_onset]
+telemetry_gaps: []
+injections: []
+pii: false
+ground_truth:
+  root_cause_service: redis-cache
+  category: cache_stampede
+  trigger_change_id: null
+  onset_min: 103
+  blast_radius: [redis-cache, catalog, catalog-db, cart]
+  gold_templates:
+    - "cache miss storm after flush"
+    - "upstream overload from cache stampede"
+  solvable: true

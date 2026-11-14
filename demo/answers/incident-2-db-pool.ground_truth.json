@@ -1,0 +1,16 @@
+{
+  "root_cause_service": "payments",
+  "category": "resource_exhaustion",
+  "trigger_change_id": null,
+  "onset_min": 93,
+  "blast_radius": [
+    "payments",
+    "checkout",
+    "gateway"
+  ],
+  "gold_templates": [
+    "pool timeout waiting for connection",
+    "failed to checkout connection"
+  ],
+  "solvable": true
+}

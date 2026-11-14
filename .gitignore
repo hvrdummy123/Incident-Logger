@@ -36,4 +36,5 @@ web/test-results/
 # Misc
 *.log
 !samples/formats/*.log
+!demo/**/*.log
 .tox/

@@ -1,0 +1,1165 @@
+{"ts": "2023-11-14T22:13:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:13:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:14:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:14:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:15:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:15:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:16:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:16:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:17:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:17:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:18:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:18:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:19:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:19:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:20:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:20:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:21:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:21:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:22:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:22:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:23:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:23:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:24:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:24:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:25:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:25:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:26:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:26:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:27:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:27:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:28:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:28:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:29:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:29:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:30:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:30:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:31:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:31:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:32:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:32:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:32:20.020Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:33:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:33:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:34:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:34:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:35:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:35:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:36:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:36:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:37:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:37:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:38:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:38:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:39:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:39:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:40:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:40:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:41:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:41:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:42:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:42:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:43:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:43:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:44:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:44:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:45:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:45:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:46:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:46:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:47:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:47:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:48:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:48:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:49:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:49:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:49:20.020Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:50:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:50:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:51:20.000Z", "service": "payments-db", "level": "INFO", "message": "health check ok", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:51:20.010Z", "service": "payments-db", "level": "INFO", "message": "health check ok", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:52:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:52:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:53:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:53:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:54:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:54:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:55:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:55:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:56:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:56:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:57:20.000Z", "service": "payments-db", "level": "INFO", "message": "health check ok", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:57:20.010Z", "service": "payments-db", "level": "INFO", "message": "health check ok", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:58:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:58:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:59:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T22:59:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:00:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:00:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:01:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:01:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:02:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:02:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:03:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:03:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:04:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:04:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:05:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:05:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:06:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:06:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:07:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:07:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:08:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:08:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:09:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:09:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:10:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:10:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:11:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:11:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:12:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:12:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:13:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:13:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:14:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:14:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:15:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:15:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:16:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:16:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:17:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:17:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:18:20.000Z", "service": "payments-db", "level": "INFO", "message": "health check ok", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:18:20.010Z", "service": "payments-db", "level": "INFO", "message": "health check ok", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:19:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:20:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:20:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:21:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:21:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:22:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:22:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:23:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:23:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:24:20.000Z", "service": "payments-db", "level": "INFO", "message": "health check ok", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:24:20.010Z", "service": "payments-db", "level": "INFO", "message": "health check ok", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:25:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:25:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:26:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:26:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:27:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:27:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:28:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:28:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:29:20.000Z", "service": "payments-db", "level": "INFO", "message": "health check ok", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:29:20.010Z", "service": "payments-db", "level": "INFO", "message": "health check ok", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:30:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:30:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:31:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:31:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:32:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:32:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:33:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:33:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:34:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:34:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:35:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:35:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:36:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:36:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:37:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:37:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:38:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:38:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:39:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:39:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:40:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:40:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:41:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:41:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:42:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:42:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:43:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:43:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:44:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:44:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:45:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:45:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:46:20.000Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:46:20.010Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:46:20.020Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:46:20.030Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:46:20.040Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:46:20.050Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:46:20.060Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:46:20.070Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:46:20.080Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:46:20.090Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:46:20.100Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:46:20.110Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:46:20.120Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:46:20.130Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:46:20.140Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:46:20.000Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:46:20.010Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:46:20.020Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:46:20.030Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:46:20.040Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:47:20.000Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:47:20.010Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:47:20.020Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:47:20.030Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:47:20.040Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:47:20.050Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:47:20.060Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:47:20.070Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:47:20.080Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:47:20.090Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:47:20.100Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:47:20.110Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:47:20.120Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:47:20.130Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:47:20.140Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:47:20.000Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:47:20.010Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:47:20.020Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:47:20.030Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:47:20.040Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:48:20.000Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:48:20.010Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:48:20.020Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:48:20.030Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:48:20.040Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:48:20.050Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:48:20.060Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:48:20.070Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:48:20.080Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:48:20.090Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:48:20.100Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:48:20.110Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:48:20.120Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:48:20.130Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:48:20.140Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:48:20.000Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:48:20.010Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:48:20.020Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:48:20.030Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:48:20.040Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:49:20.000Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:49:20.010Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:49:20.020Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:49:20.030Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:49:20.040Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:49:20.050Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:49:20.060Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:49:20.070Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:49:20.080Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:49:20.090Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:49:20.100Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:49:20.110Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:49:20.120Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:49:20.130Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:49:20.140Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:49:20.000Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:49:20.010Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:49:20.020Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:49:20.030Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:49:20.040Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:50:20.000Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:50:20.010Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:50:20.020Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:50:20.030Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:50:20.040Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:50:20.050Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:50:20.060Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:50:20.070Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:50:20.080Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:50:20.090Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:50:20.100Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:50:20.110Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:50:20.120Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:50:20.130Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:50:20.140Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:50:20.000Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:50:20.010Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:50:20.020Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:50:20.030Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:50:20.040Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:51:20.000Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:51:20.010Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:51:20.020Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:51:20.030Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:51:20.040Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:51:20.050Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:51:20.060Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:51:20.070Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:51:20.080Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:51:20.090Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:51:20.100Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:51:20.110Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:51:20.120Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:51:20.130Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:51:20.140Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:51:20.000Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:51:20.010Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:51:20.020Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:51:20.030Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:51:20.040Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:52:20.000Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:52:20.010Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:52:20.020Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:52:20.030Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:52:20.040Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:52:20.050Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:52:20.060Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:52:20.070Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:52:20.080Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:52:20.090Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:52:20.100Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:52:20.110Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:52:20.120Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:52:20.130Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:52:20.140Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:52:20.000Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:52:20.010Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:52:20.020Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:52:20.030Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:52:20.040Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:53:20.000Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:53:20.010Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:53:20.020Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:53:20.030Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:53:20.040Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:53:20.050Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:53:20.060Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:53:20.070Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:53:20.080Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:53:20.090Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:53:20.100Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:53:20.110Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:53:20.120Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:53:20.130Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:53:20.140Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:53:20.000Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:53:20.010Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:53:20.020Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:53:20.030Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:53:20.040Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:54:20.000Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:54:20.010Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:54:20.020Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:54:20.030Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:54:20.040Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:54:20.050Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:54:20.060Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:54:20.070Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:54:20.080Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:54:20.090Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:54:20.100Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:54:20.110Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:54:20.120Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:54:20.130Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:54:20.140Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:54:20.000Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:54:20.010Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:54:20.020Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:54:20.030Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:54:20.040Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:55:20.000Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:55:20.010Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:55:20.020Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:55:20.030Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:55:20.040Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:55:20.050Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:55:20.060Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:55:20.070Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:55:20.080Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:55:20.090Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:55:20.100Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:55:20.110Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:55:20.120Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:55:20.130Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:55:20.140Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:55:20.000Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:55:20.010Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:55:20.020Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:55:20.030Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:55:20.040Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:56:20.000Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:56:20.010Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:56:20.020Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:56:20.030Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:56:20.040Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:56:20.050Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:56:20.060Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:56:20.070Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:56:20.080Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:56:20.090Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:56:20.100Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:56:20.110Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:56:20.120Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:56:20.130Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:56:20.140Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:56:20.000Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:56:20.010Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:56:20.020Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:56:20.030Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:56:20.040Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:57:20.000Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:57:20.010Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:57:20.020Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:57:20.030Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:57:20.040Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:57:20.050Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:57:20.060Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:57:20.070Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:57:20.080Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:57:20.090Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:57:20.100Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:57:20.110Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:57:20.120Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:57:20.130Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:57:20.140Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:57:20.000Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:57:20.010Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:57:20.020Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:57:20.030Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:57:20.040Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:58:20.000Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:58:20.010Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:58:20.020Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:58:20.030Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:58:20.040Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:58:20.050Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:58:20.060Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:58:20.070Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:58:20.080Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:58:20.090Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:58:20.100Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:58:20.110Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:58:20.120Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:58:20.130Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:58:20.140Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:58:20.000Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:58:20.010Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:58:20.020Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:58:20.030Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:58:20.040Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:59:20.000Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:59:20.010Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:59:20.020Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:59:20.030Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:59:20.040Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:59:20.050Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:59:20.060Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:59:20.070Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:59:20.080Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:59:20.090Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:59:20.100Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:59:20.110Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:59:20.120Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:59:20.130Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:59:20.140Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:59:20.000Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:59:20.010Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:59:20.020Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:59:20.030Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-14T23:59:20.040Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:00:20.000Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:00:20.010Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:00:20.020Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:00:20.030Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:00:20.040Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:00:20.050Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:00:20.060Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:00:20.070Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:00:20.080Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:00:20.090Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:00:20.100Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:00:20.110Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:00:20.120Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:00:20.130Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:00:20.140Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:00:20.000Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:00:20.010Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:00:20.020Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:00:20.030Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:00:20.040Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:01:20.000Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:01:20.010Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:01:20.020Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:01:20.030Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:01:20.040Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:01:20.050Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:01:20.060Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:01:20.070Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:01:20.080Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:01:20.090Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:01:20.100Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:01:20.110Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:01:20.120Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:01:20.130Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:01:20.140Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:01:20.000Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:01:20.010Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:01:20.020Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:01:20.030Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:01:20.040Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:02:20.000Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:02:20.010Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:02:20.020Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:02:20.030Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:02:20.040Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:02:20.050Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:02:20.060Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:02:20.070Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:02:20.080Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:02:20.090Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:02:20.100Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:02:20.110Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:02:20.120Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:02:20.130Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:02:20.140Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:02:20.000Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:02:20.010Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:02:20.020Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:02:20.030Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:02:20.040Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:03:20.000Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:03:20.010Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:03:20.020Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:03:20.030Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:03:20.040Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:03:20.050Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:03:20.060Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:03:20.070Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:03:20.080Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:03:20.090Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:03:20.100Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:03:20.110Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:03:20.120Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:03:20.130Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:03:20.140Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:03:20.000Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:03:20.010Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:03:20.020Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:03:20.030Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:03:20.040Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:04:20.000Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:04:20.010Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:04:20.020Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:04:20.030Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:04:20.040Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:04:20.050Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:04:20.060Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:04:20.070Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:04:20.080Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:04:20.090Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:04:20.100Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:04:20.110Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:04:20.120Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:04:20.130Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:04:20.140Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:04:20.000Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:04:20.010Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:04:20.020Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:04:20.030Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:04:20.040Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:05:20.000Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:05:20.010Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:05:20.020Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:05:20.030Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:05:20.040Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:05:20.050Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:05:20.060Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:05:20.070Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:05:20.080Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:05:20.090Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:05:20.100Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:05:20.110Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:05:20.120Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:05:20.130Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:05:20.140Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:05:20.000Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:05:20.010Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:05:20.020Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:05:20.030Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:05:20.040Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:06:20.000Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:06:20.010Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:06:20.020Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:06:20.030Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:06:20.040Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:06:20.050Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:06:20.060Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:06:20.070Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:06:20.080Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:06:20.090Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:06:20.100Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:06:20.110Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:06:20.120Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:06:20.130Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:06:20.140Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:06:20.000Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:06:20.010Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:06:20.020Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:06:20.030Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:06:20.040Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:07:20.000Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:07:20.010Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:07:20.020Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:07:20.030Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:07:20.040Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:07:20.050Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:07:20.060Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:07:20.070Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:07:20.080Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:07:20.090Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:07:20.100Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:07:20.110Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:07:20.120Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:07:20.130Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:07:20.140Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:07:20.000Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:07:20.010Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:07:20.020Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:07:20.030Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:07:20.040Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:08:20.000Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:08:20.010Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:08:20.020Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:08:20.030Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:08:20.040Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:08:20.050Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:08:20.060Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:08:20.070Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:08:20.080Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:08:20.090Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:08:20.100Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:08:20.110Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:08:20.120Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:08:20.130Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:08:20.140Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:08:20.000Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:08:20.010Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:08:20.020Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:08:20.030Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:08:20.040Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:09:20.000Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:09:20.010Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:09:20.020Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:09:20.030Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:09:20.040Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:09:20.050Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:09:20.060Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:09:20.070Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:09:20.080Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:09:20.090Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:09:20.100Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:09:20.110Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:09:20.120Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:09:20.130Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:09:20.140Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:09:20.000Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:09:20.010Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:09:20.020Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:09:20.030Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:09:20.040Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:10:20.000Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:10:20.010Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:10:20.020Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:10:20.030Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:10:20.040Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:10:20.050Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:10:20.060Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:10:20.070Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:10:20.080Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:10:20.090Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:10:20.100Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:10:20.110Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:10:20.120Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:10:20.130Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:10:20.140Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:10:20.000Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:10:20.010Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:10:20.020Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:10:20.030Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:10:20.040Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:11:20.000Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:11:20.010Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:11:20.020Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:11:20.030Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:11:20.040Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:11:20.050Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:11:20.060Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:11:20.070Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:11:20.080Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:11:20.090Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:11:20.100Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:11:20.110Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:11:20.120Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:11:20.130Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:11:20.140Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:11:20.000Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:11:20.010Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:11:20.020Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:11:20.030Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:11:20.040Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:12:20.000Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:12:20.010Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:12:20.020Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:12:20.030Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:12:20.040Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:12:20.050Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:12:20.060Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:12:20.070Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:12:20.080Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:12:20.090Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:12:20.100Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:12:20.110Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:12:20.120Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:12:20.130Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:12:20.140Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:12:20.000Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:12:20.010Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:12:20.020Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:12:20.030Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:12:20.040Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:13:20.000Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:13:20.010Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:13:20.020Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:13:20.030Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:13:20.040Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:13:20.050Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:13:20.060Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:13:20.070Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:13:20.080Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:13:20.090Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:13:20.100Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:13:20.110Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:13:20.120Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:13:20.130Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:13:20.140Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:13:20.000Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:13:20.010Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:13:20.020Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:13:20.030Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:13:20.040Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:14:20.000Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:14:20.010Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:14:20.020Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:14:20.030Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:14:20.040Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:14:20.050Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:14:20.060Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:14:20.070Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:14:20.080Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:14:20.090Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:14:20.100Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:14:20.110Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:14:20.120Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:14:20.130Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:14:20.140Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:14:20.000Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:14:20.010Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:14:20.020Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:14:20.030Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:14:20.040Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:15:20.000Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:15:20.010Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:15:20.020Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:15:20.030Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:15:20.040Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:15:20.050Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:15:20.060Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:15:20.070Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:15:20.080Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:15:20.090Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:15:20.100Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:15:20.110Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:15:20.120Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:15:20.130Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:15:20.140Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:15:20.000Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:15:20.010Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:15:20.020Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:15:20.030Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:15:20.040Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:16:20.000Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:16:20.010Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:16:20.020Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:16:20.030Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:16:20.040Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:16:20.050Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:16:20.060Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:16:20.070Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:16:20.080Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:16:20.090Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:16:20.100Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:16:20.110Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:16:20.120Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:16:20.130Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:16:20.140Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:16:20.000Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:16:20.010Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:16:20.020Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:16:20.030Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:16:20.040Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:17:20.000Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:17:20.010Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:17:20.020Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:17:20.030Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:17:20.040Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:17:20.050Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:17:20.060Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:17:20.070Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:17:20.080Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:17:20.090Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:17:20.100Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:17:20.110Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:17:20.120Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:17:20.130Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:17:20.140Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:17:20.000Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:17:20.010Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:17:20.020Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:17:20.030Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:17:20.040Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:18:20.000Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:18:20.010Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:18:20.020Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:18:20.030Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:18:20.040Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:18:20.050Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:18:20.060Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:18:20.070Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:18:20.080Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:18:20.090Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:18:20.100Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:18:20.110Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:18:20.120Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:18:20.130Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:18:20.140Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:18:20.000Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:18:20.010Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:18:20.020Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:18:20.030Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:18:20.040Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:19:20.000Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:19:20.010Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:19:20.020Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:19:20.030Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:19:20.040Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:19:20.050Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:19:20.060Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:19:20.070Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:19:20.080Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:19:20.090Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:19:20.100Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:19:20.110Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:19:20.120Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:19:20.130Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:19:20.140Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:19:20.000Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:19:20.010Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:19:20.020Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:19:20.030Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:19:20.040Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:20:20.000Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:20:20.010Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:20:20.020Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:20:20.030Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:20:20.040Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:20:20.050Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:20:20.060Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:20:20.070Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:20:20.080Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:20:20.090Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:20:20.100Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:20:20.110Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:20:20.120Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:20:20.130Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:20:20.140Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:20:20.000Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:20:20.010Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:20:20.020Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:20:20.030Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:20:20.040Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:21:20.000Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:21:20.010Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:21:20.020Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:21:20.030Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:21:20.040Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:21:20.050Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:21:20.060Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:21:20.070Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:21:20.080Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:21:20.090Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:21:20.100Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:21:20.110Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:21:20.120Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:21:20.130Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:21:20.140Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:21:20.000Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:21:20.010Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:21:20.020Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:21:20.030Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:21:20.040Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:22:20.000Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:22:20.010Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:22:20.020Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:22:20.030Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:22:20.040Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:22:20.050Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:22:20.060Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:22:20.070Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:22:20.080Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:22:20.090Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:22:20.100Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:22:20.110Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:22:20.120Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:22:20.130Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:22:20.140Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:22:20.000Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:22:20.010Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:22:20.020Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:22:20.030Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:22:20.040Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:23:20.000Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:23:20.010Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:23:20.020Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:23:20.030Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:23:20.040Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:23:20.050Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:23:20.060Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:23:20.070Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:23:20.080Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:23:20.090Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:23:20.100Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:23:20.110Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:23:20.120Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:23:20.130Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:23:20.140Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:23:20.000Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:23:20.010Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:23:20.020Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:23:20.030Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:23:20.040Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:24:20.000Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:24:20.010Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:24:20.020Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:24:20.030Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:24:20.040Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:24:20.050Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:24:20.060Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:24:20.070Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:24:20.080Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:24:20.090Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:24:20.100Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:24:20.110Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:24:20.120Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:24:20.130Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:24:20.140Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:24:20.000Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:24:20.010Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:24:20.020Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:24:20.030Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:24:20.040Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:25:20.000Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:25:20.010Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:25:20.020Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:25:20.030Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:25:20.040Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:25:20.050Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:25:20.060Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:25:20.070Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:25:20.080Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:25:20.090Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:25:20.100Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:25:20.110Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:25:20.120Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:25:20.130Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:25:20.140Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:25:20.000Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:25:20.010Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:25:20.020Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:25:20.030Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:25:20.040Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:26:20.000Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:26:20.010Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:26:20.020Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:26:20.030Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:26:20.040Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:26:20.050Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:26:20.060Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:26:20.070Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:26:20.080Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:26:20.090Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:26:20.100Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:26:20.110Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:26:20.120Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:26:20.130Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:26:20.140Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:26:20.000Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:26:20.010Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:26:20.020Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:26:20.030Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:26:20.040Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:27:20.000Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:27:20.010Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:27:20.020Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:27:20.030Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:27:20.040Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:27:20.050Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:27:20.060Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:27:20.070Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:27:20.080Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:27:20.090Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:27:20.100Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:27:20.110Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:27:20.120Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:27:20.130Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:27:20.140Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:27:20.000Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:27:20.010Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:27:20.020Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:27:20.030Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:27:20.040Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:28:20.000Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:28:20.010Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:28:20.020Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:28:20.030Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:28:20.040Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:28:20.050Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:28:20.060Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:28:20.070Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:28:20.080Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:28:20.090Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:28:20.100Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:28:20.110Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:28:20.120Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:28:20.130Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:28:20.140Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:28:20.000Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:28:20.010Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:28:20.020Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:28:20.030Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:28:20.040Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:29:20.000Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:29:20.010Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:29:20.020Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:29:20.030Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:29:20.040Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:29:20.050Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:29:20.060Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:29:20.070Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:29:20.080Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:29:20.090Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:29:20.100Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:29:20.110Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:29:20.120Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:29:20.130Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:29:20.140Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:29:20.000Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:29:20.010Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:29:20.020Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:29:20.030Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:29:20.040Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:30:20.000Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:30:20.010Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:30:20.020Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:30:20.030Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:30:20.040Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:30:20.050Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:30:20.060Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:30:20.070Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:30:20.080Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:30:20.090Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:30:20.100Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:30:20.110Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:30:20.120Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:30:20.130Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:30:20.140Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:30:20.000Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:30:20.010Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:30:20.020Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:30:20.030Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:30:20.040Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:31:20.000Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:31:20.010Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:31:20.020Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:31:20.030Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:31:20.040Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:31:20.050Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:31:20.060Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:31:20.070Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:31:20.080Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:31:20.090Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:31:20.100Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:31:20.110Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:31:20.120Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:31:20.130Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:31:20.140Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:31:20.000Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:31:20.010Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:31:20.020Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:31:20.030Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:31:20.040Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:32:20.000Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:32:20.010Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:32:20.020Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:32:20.030Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:32:20.040Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:32:20.050Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:32:20.060Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:32:20.070Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:32:20.080Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:32:20.090Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:32:20.100Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:32:20.110Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:32:20.120Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:32:20.130Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:32:20.140Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:32:20.000Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:32:20.010Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:32:20.020Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:32:20.030Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:32:20.040Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:33:20.000Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:33:20.010Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:33:20.020Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:33:20.030Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:33:20.040Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:33:20.050Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:33:20.060Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:33:20.070Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:33:20.080Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:33:20.090Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:33:20.100Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:33:20.110Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:33:20.120Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:33:20.130Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:33:20.140Z", "service": "payments-db", "level": "ERROR", "message": "pool timeout waiting for connection", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:33:20.000Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:33:20.010Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:33:20.020Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:33:20.030Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:33:20.040Z", "service": "payments-db", "level": "WARN", "message": "connection pool saturated", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:34:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:34:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:35:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:35:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:36:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:36:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:37:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:37:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:38:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:38:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:39:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:39:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:40:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:40:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:41:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:41:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:42:20.000Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}
+{"ts": "2023-11-15T00:42:20.010Z", "service": "payments-db", "level": "INFO", "message": "payments-db handled request", "instance": "payments-db-0"}

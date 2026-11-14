@@ -189,18 +189,72 @@ def audit_verify(
         raise typer.Exit(1)
 
 
+@app.command("simulate")
+def simulate_cmd(
+    scenario: Annotated[str, typer.Option("--scenario", help="Scenario id or yaml path")],
+    out: Annotated[str, typer.Option("--out", help="Output directory")],
+    seed: Annotated[int | None, typer.Option("--seed", help="Override seed")] = None,
+) -> None:
+    """Generate a telemetry bundle from a scenario YAML."""
+    from pathlib import Path
+
+    from traceiq.evals.runner import scenarios_dir
+    from traceiq.sim.scenarios import load_scenario
+    from traceiq.sim.world import simulate, write_bundle
+
+    path = Path(scenario)
+    if not path.exists():
+        path = scenarios_dir() / f"{scenario}.yaml"
+    sc = load_scenario(path)
+    if seed is not None:
+        sc.seed = seed
+    bundle = simulate(sc)
+    write_bundle(bundle, Path(out))
+    console.print(
+        f"wrote {out} logs={len(bundle.logs)} metrics={len(bundle.metrics)} "
+        f"changes={len(bundle.changes)}"
+    )
+
+
+eval_app = typer.Typer(help="Evaluation harness")
+app.add_typer(eval_app, name="eval")
+
+
+@eval_app.command("run")
+def eval_run(
+    suite: Annotated[str, typer.Option("--suite")] = "dev",
+    agents: Annotated[
+        str,
+        typer.Option("--agents", help="Comma-separated agent names"),
+    ] = "oracle,deterministic,most_errors,latest_deploy",
+) -> None:
+    """Run baseline agents on a scenario split."""
+    import json
+
+    from rich import print_json
+
+    from traceiq.evals.runner import run_suite
+
+    result = run_suite(split=suite, agents=[a.strip() for a in agents.split(",") if a.strip()])
+    print_json(json.dumps(result))
+
+
 demo_app = typer.Typer(help="Demo incident bundles")
 app.add_typer(demo_app, name="demo")
 
 
 @demo_app.command("list")
 def demo_list() -> None:
-    """List shipped demo incidents (available after M4)."""
-    console.print(
-        "Demos not generated yet (milestone M4). "
-        "Expected: incident-1-bad-deploy, incident-2-db-pool, "
-        "incident-3-cache-stampede."
-    )
+    """List shipped demo incidents."""
+    from pathlib import Path
+
+    demo = Path("demo")
+    if not demo.exists():
+        console.print("No demo/ yet — run scripts/make_demo.sh")
+        return
+    for p in sorted(demo.iterdir()):
+        if p.is_dir() and p.name.startswith("incident-"):
+            console.print(p.name)
 
 
 if __name__ == "__main__":

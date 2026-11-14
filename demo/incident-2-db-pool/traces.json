@@ -1,0 +1,1941 @@
+{
+  "spans": [
+    {
+      "trace_id": "tr_42_1_cart_catalog",
+      "span_id": "sp_539132",
+      "parent_id": "",
+      "service": "cart",
+      "name": "call catalog",
+      "start_ts": 1700000060000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "catalog"
+      }
+    },
+    {
+      "trace_id": "tr_42_2_catalog_redis-cache",
+      "span_id": "sp_313922",
+      "parent_id": "",
+      "service": "catalog",
+      "name": "call redis-cache",
+      "start_ts": 1700000120000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "redis-cache"
+      }
+    },
+    {
+      "trace_id": "tr_42_3_cart_catalog",
+      "span_id": "sp_545176",
+      "parent_id": "",
+      "service": "cart",
+      "name": "call catalog",
+      "start_ts": 1700000180000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "catalog"
+      }
+    },
+    {
+      "trace_id": "tr_42_3_payments_payments-db",
+      "span_id": "sp_450771",
+      "parent_id": "",
+      "service": "payments",
+      "name": "call payments-db",
+      "start_ts": 1700000180000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "payments-db"
+      }
+    },
+    {
+      "trace_id": "tr_42_4_checkout_payments",
+      "span_id": "sp_603656",
+      "parent_id": "",
+      "service": "checkout",
+      "name": "call payments",
+      "start_ts": 1700000240000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "payments"
+      }
+    },
+    {
+      "trace_id": "tr_42_4_checkout_notifications",
+      "span_id": "sp_790076",
+      "parent_id": "",
+      "service": "checkout",
+      "name": "call notifications",
+      "start_ts": 1700000240000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "notifications"
+      }
+    },
+    {
+      "trace_id": "tr_42_7_cart_redis-cache",
+      "span_id": "sp_235616",
+      "parent_id": "",
+      "service": "cart",
+      "name": "call redis-cache",
+      "start_ts": 1700000420000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "redis-cache"
+      }
+    },
+    {
+      "trace_id": "tr_42_8_checkout_payments",
+      "span_id": "sp_944987",
+      "parent_id": "",
+      "service": "checkout",
+      "name": "call payments",
+      "start_ts": 1700000480000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "payments"
+      }
+    },
+    {
+      "trace_id": "tr_42_8_payments_payments-db",
+      "span_id": "sp_415033",
+      "parent_id": "",
+      "service": "payments",
+      "name": "call payments-db",
+      "start_ts": 1700000480000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "payments-db"
+      }
+    },
+    {
+      "trace_id": "tr_42_8_queue_email-worker",
+      "span_id": "sp_520857",
+      "parent_id": "",
+      "service": "queue",
+      "name": "call email-worker",
+      "start_ts": 1700000480000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "email-worker"
+      }
+    },
+    {
+      "trace_id": "tr_42_16_gateway_auth",
+      "span_id": "sp_748256",
+      "parent_id": "",
+      "service": "gateway",
+      "name": "call auth",
+      "start_ts": 1700000960000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "auth"
+      }
+    },
+    {
+      "trace_id": "tr_42_17_payments_psp-external",
+      "span_id": "sp_974232",
+      "parent_id": "",
+      "service": "payments",
+      "name": "call psp-external",
+      "start_ts": 1700001020000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "psp-external"
+      }
+    },
+    {
+      "trace_id": "tr_42_19_catalog_redis-cache",
+      "span_id": "sp_565980",
+      "parent_id": "",
+      "service": "catalog",
+      "name": "call redis-cache",
+      "start_ts": 1700001140000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "redis-cache"
+      }
+    },
+    {
+      "trace_id": "tr_42_20_gateway_search",
+      "span_id": "sp_991102",
+      "parent_id": "",
+      "service": "gateway",
+      "name": "call search",
+      "start_ts": 1700001200000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "search"
+      }
+    },
+    {
+      "trace_id": "tr_42_25_payments_payments-db",
+      "span_id": "sp_918372",
+      "parent_id": "",
+      "service": "payments",
+      "name": "call payments-db",
+      "start_ts": 1700001500000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "payments-db"
+      }
+    },
+    {
+      "trace_id": "tr_42_26_cart_redis-cache",
+      "span_id": "sp_285193",
+      "parent_id": "",
+      "service": "cart",
+      "name": "call redis-cache",
+      "start_ts": 1700001560000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "redis-cache"
+      }
+    },
+    {
+      "trace_id": "tr_42_26_gateway_catalog",
+      "span_id": "sp_12885",
+      "parent_id": "",
+      "service": "gateway",
+      "name": "call catalog",
+      "start_ts": 1700001560000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "catalog"
+      }
+    },
+    {
+      "trace_id": "tr_42_27_gateway_cart",
+      "span_id": "sp_343717",
+      "parent_id": "",
+      "service": "gateway",
+      "name": "call cart",
+      "start_ts": 1700001620000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "cart"
+      }
+    },
+    {
+      "trace_id": "tr_42_29_cart_catalog",
+      "span_id": "sp_440039",
+      "parent_id": "",
+      "service": "cart",
+      "name": "call catalog",
+      "start_ts": 1700001740000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "catalog"
+      }
+    },
+    {
+      "trace_id": "tr_42_29_payments_psp-external",
+      "span_id": "sp_173013",
+      "parent_id": "",
+      "service": "payments",
+      "name": "call psp-external",
+      "start_ts": 1700001740000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "psp-external"
+      }
+    },
+    {
+      "trace_id": "tr_42_30_cart_catalog",
+      "span_id": "sp_716309",
+      "parent_id": "",
+      "service": "cart",
+      "name": "call catalog",
+      "start_ts": 1700001800000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "catalog"
+      }
+    },
+    {
+      "trace_id": "tr_42_31_checkout_inventory",
+      "span_id": "sp_804859",
+      "parent_id": "",
+      "service": "checkout",
+      "name": "call inventory",
+      "start_ts": 1700001860000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "inventory"
+      }
+    },
+    {
+      "trace_id": "tr_42_32_search_search-index",
+      "span_id": "sp_769239",
+      "parent_id": "",
+      "service": "search",
+      "name": "call search-index",
+      "start_ts": 1700001920000,
+      "duration_ms": 100,
+      "status": "ERROR",
+      "attrs": {
+        "peer.service": "search-index"
+      }
+    },
+    {
+      "trace_id": "tr_42_33_catalog_catalog-db",
+      "span_id": "sp_217783",
+      "parent_id": "",
+      "service": "catalog",
+      "name": "call catalog-db",
+      "start_ts": 1700001980000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "catalog-db"
+      }
+    },
+    {
+      "trace_id": "tr_42_33_checkout_cart",
+      "span_id": "sp_115796",
+      "parent_id": "",
+      "service": "checkout",
+      "name": "call cart",
+      "start_ts": 1700001980000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "cart"
+      }
+    },
+    {
+      "trace_id": "tr_42_34_gateway_auth",
+      "span_id": "sp_633554",
+      "parent_id": "",
+      "service": "gateway",
+      "name": "call auth",
+      "start_ts": 1700002040000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "auth"
+      }
+    },
+    {
+      "trace_id": "tr_42_35_gateway_search",
+      "span_id": "sp_399372",
+      "parent_id": "",
+      "service": "gateway",
+      "name": "call search",
+      "start_ts": 1700002100000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "search"
+      }
+    },
+    {
+      "trace_id": "tr_42_36_checkout_payments",
+      "span_id": "sp_467316",
+      "parent_id": "",
+      "service": "checkout",
+      "name": "call payments",
+      "start_ts": 1700002160000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "payments"
+      }
+    },
+    {
+      "trace_id": "tr_42_36_gateway_search",
+      "span_id": "sp_807922",
+      "parent_id": "",
+      "service": "gateway",
+      "name": "call search",
+      "start_ts": 1700002160000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "search"
+      }
+    },
+    {
+      "trace_id": "tr_42_36_notifications_queue",
+      "span_id": "sp_201864",
+      "parent_id": "",
+      "service": "notifications",
+      "name": "call queue",
+      "start_ts": 1700002160000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "queue"
+      }
+    },
+    {
+      "trace_id": "tr_42_38_catalog_redis-cache",
+      "span_id": "sp_108240",
+      "parent_id": "",
+      "service": "catalog",
+      "name": "call redis-cache",
+      "start_ts": 1700002280000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "redis-cache"
+      }
+    },
+    {
+      "trace_id": "tr_42_39_cart_catalog",
+      "span_id": "sp_240634",
+      "parent_id": "",
+      "service": "cart",
+      "name": "call catalog",
+      "start_ts": 1700002340000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "catalog"
+      }
+    },
+    {
+      "trace_id": "tr_42_39_gateway_catalog",
+      "span_id": "sp_7460",
+      "parent_id": "",
+      "service": "gateway",
+      "name": "call catalog",
+      "start_ts": 1700002340000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "catalog"
+      }
+    },
+    {
+      "trace_id": "tr_42_39_gateway_search",
+      "span_id": "sp_721176",
+      "parent_id": "",
+      "service": "gateway",
+      "name": "call search",
+      "start_ts": 1700002340000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "search"
+      }
+    },
+    {
+      "trace_id": "tr_42_40_checkout_cart",
+      "span_id": "sp_530830",
+      "parent_id": "",
+      "service": "checkout",
+      "name": "call cart",
+      "start_ts": 1700002400000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "cart"
+      }
+    },
+    {
+      "trace_id": "tr_42_40_payments_payments-db",
+      "span_id": "sp_70836",
+      "parent_id": "",
+      "service": "payments",
+      "name": "call payments-db",
+      "start_ts": 1700002400000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "payments-db"
+      }
+    },
+    {
+      "trace_id": "tr_42_41_gateway_search",
+      "span_id": "sp_141004",
+      "parent_id": "",
+      "service": "gateway",
+      "name": "call search",
+      "start_ts": 1700002460000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "search"
+      }
+    },
+    {
+      "trace_id": "tr_42_42_queue_email-worker",
+      "span_id": "sp_889137",
+      "parent_id": "",
+      "service": "queue",
+      "name": "call email-worker",
+      "start_ts": 1700002520000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "email-worker"
+      }
+    },
+    {
+      "trace_id": "tr_42_43_payments_payments-db",
+      "span_id": "sp_613100",
+      "parent_id": "",
+      "service": "payments",
+      "name": "call payments-db",
+      "start_ts": 1700002580000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "payments-db"
+      }
+    },
+    {
+      "trace_id": "tr_42_45_gateway_search",
+      "span_id": "sp_401067",
+      "parent_id": "",
+      "service": "gateway",
+      "name": "call search",
+      "start_ts": 1700002700000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "search"
+      }
+    },
+    {
+      "trace_id": "tr_42_46_payments_psp-external",
+      "span_id": "sp_319740",
+      "parent_id": "",
+      "service": "payments",
+      "name": "call psp-external",
+      "start_ts": 1700002760000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "psp-external"
+      }
+    },
+    {
+      "trace_id": "tr_42_48_edge-lb_gateway",
+      "span_id": "sp_249434",
+      "parent_id": "",
+      "service": "edge-lb",
+      "name": "call gateway",
+      "start_ts": 1700002880000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "gateway"
+      }
+    },
+    {
+      "trace_id": "tr_42_48_gateway_cart",
+      "span_id": "sp_291623",
+      "parent_id": "",
+      "service": "gateway",
+      "name": "call cart",
+      "start_ts": 1700002880000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "cart"
+      }
+    },
+    {
+      "trace_id": "tr_42_48_queue_email-worker",
+      "span_id": "sp_186907",
+      "parent_id": "",
+      "service": "queue",
+      "name": "call email-worker",
+      "start_ts": 1700002880000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "email-worker"
+      }
+    },
+    {
+      "trace_id": "tr_42_49_checkout_inventory",
+      "span_id": "sp_162935",
+      "parent_id": "",
+      "service": "checkout",
+      "name": "call inventory",
+      "start_ts": 1700002940000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "inventory"
+      }
+    },
+    {
+      "trace_id": "tr_42_52_catalog_redis-cache",
+      "span_id": "sp_785830",
+      "parent_id": "",
+      "service": "catalog",
+      "name": "call redis-cache",
+      "start_ts": 1700003120000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "redis-cache"
+      }
+    },
+    {
+      "trace_id": "tr_42_54_checkout_payments",
+      "span_id": "sp_354124",
+      "parent_id": "",
+      "service": "checkout",
+      "name": "call payments",
+      "start_ts": 1700003240000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "payments"
+      }
+    },
+    {
+      "trace_id": "tr_42_54_checkout_notifications",
+      "span_id": "sp_846310",
+      "parent_id": "",
+      "service": "checkout",
+      "name": "call notifications",
+      "start_ts": 1700003240000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "notifications"
+      }
+    },
+    {
+      "trace_id": "tr_42_54_gateway_recs",
+      "span_id": "sp_648411",
+      "parent_id": "",
+      "service": "gateway",
+      "name": "call recs",
+      "start_ts": 1700003240000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "recs"
+      }
+    },
+    {
+      "trace_id": "tr_42_54_payments_payments-db",
+      "span_id": "sp_832252",
+      "parent_id": "",
+      "service": "payments",
+      "name": "call payments-db",
+      "start_ts": 1700003240000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "payments-db"
+      }
+    },
+    {
+      "trace_id": "tr_42_55_gateway_auth",
+      "span_id": "sp_74302",
+      "parent_id": "",
+      "service": "gateway",
+      "name": "call auth",
+      "start_ts": 1700003300000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "auth"
+      }
+    },
+    {
+      "trace_id": "tr_42_56_cart_catalog",
+      "span_id": "sp_809328",
+      "parent_id": "",
+      "service": "cart",
+      "name": "call catalog",
+      "start_ts": 1700003360000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "catalog"
+      }
+    },
+    {
+      "trace_id": "tr_42_56_checkout_cart",
+      "span_id": "sp_403576",
+      "parent_id": "",
+      "service": "checkout",
+      "name": "call cart",
+      "start_ts": 1700003360000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "cart"
+      }
+    },
+    {
+      "trace_id": "tr_42_56_checkout_notifications",
+      "span_id": "sp_282895",
+      "parent_id": "",
+      "service": "checkout",
+      "name": "call notifications",
+      "start_ts": 1700003360000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "notifications"
+      }
+    },
+    {
+      "trace_id": "tr_42_58_recs_feature-store",
+      "span_id": "sp_517001",
+      "parent_id": "",
+      "service": "recs",
+      "name": "call feature-store",
+      "start_ts": 1700003480000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "feature-store"
+      }
+    },
+    {
+      "trace_id": "tr_42_59_gateway_search",
+      "span_id": "sp_831579",
+      "parent_id": "",
+      "service": "gateway",
+      "name": "call search",
+      "start_ts": 1700003540000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "search"
+      }
+    },
+    {
+      "trace_id": "tr_42_59_payments_psp-external",
+      "span_id": "sp_129807",
+      "parent_id": "",
+      "service": "payments",
+      "name": "call psp-external",
+      "start_ts": 1700003540000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "psp-external"
+      }
+    },
+    {
+      "trace_id": "tr_42_61_cart_redis-cache",
+      "span_id": "sp_483299",
+      "parent_id": "",
+      "service": "cart",
+      "name": "call redis-cache",
+      "start_ts": 1700003660000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "redis-cache"
+      }
+    },
+    {
+      "trace_id": "tr_42_61_checkout_payments",
+      "span_id": "sp_598060",
+      "parent_id": "",
+      "service": "checkout",
+      "name": "call payments",
+      "start_ts": 1700003660000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "payments"
+      }
+    },
+    {
+      "trace_id": "tr_42_61_payments_psp-external",
+      "span_id": "sp_421557",
+      "parent_id": "",
+      "service": "payments",
+      "name": "call psp-external",
+      "start_ts": 1700003660000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "psp-external"
+      }
+    },
+    {
+      "trace_id": "tr_42_63_queue_email-worker",
+      "span_id": "sp_585662",
+      "parent_id": "",
+      "service": "queue",
+      "name": "call email-worker",
+      "start_ts": 1700003780000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "email-worker"
+      }
+    },
+    {
+      "trace_id": "tr_42_65_payments_psp-external",
+      "span_id": "sp_486042",
+      "parent_id": "",
+      "service": "payments",
+      "name": "call psp-external",
+      "start_ts": 1700003900000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "psp-external"
+      }
+    },
+    {
+      "trace_id": "tr_42_66_cart_catalog",
+      "span_id": "sp_152206",
+      "parent_id": "",
+      "service": "cart",
+      "name": "call catalog",
+      "start_ts": 1700003960000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "catalog"
+      }
+    },
+    {
+      "trace_id": "tr_42_66_checkout_inventory",
+      "span_id": "sp_159827",
+      "parent_id": "",
+      "service": "checkout",
+      "name": "call inventory",
+      "start_ts": 1700003960000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "inventory"
+      }
+    },
+    {
+      "trace_id": "tr_42_69_cart_catalog",
+      "span_id": "sp_324746",
+      "parent_id": "",
+      "service": "cart",
+      "name": "call catalog",
+      "start_ts": 1700004140000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "catalog"
+      }
+    },
+    {
+      "trace_id": "tr_42_70_gateway_cart",
+      "span_id": "sp_505609",
+      "parent_id": "",
+      "service": "gateway",
+      "name": "call cart",
+      "start_ts": 1700004200000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "cart"
+      }
+    },
+    {
+      "trace_id": "tr_42_71_gateway_auth",
+      "span_id": "sp_710657",
+      "parent_id": "",
+      "service": "gateway",
+      "name": "call auth",
+      "start_ts": 1700004260000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "auth"
+      }
+    },
+    {
+      "trace_id": "tr_42_72_payments_psp-external",
+      "span_id": "sp_711250",
+      "parent_id": "",
+      "service": "payments",
+      "name": "call psp-external",
+      "start_ts": 1700004320000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "psp-external"
+      }
+    },
+    {
+      "trace_id": "tr_42_74_gateway_search",
+      "span_id": "sp_916194",
+      "parent_id": "",
+      "service": "gateway",
+      "name": "call search",
+      "start_ts": 1700004440000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "search"
+      }
+    },
+    {
+      "trace_id": "tr_42_74_recs_feature-store",
+      "span_id": "sp_966939",
+      "parent_id": "",
+      "service": "recs",
+      "name": "call feature-store",
+      "start_ts": 1700004440000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "feature-store"
+      }
+    },
+    {
+      "trace_id": "tr_42_75_search_search-index",
+      "span_id": "sp_708442",
+      "parent_id": "",
+      "service": "search",
+      "name": "call search-index",
+      "start_ts": 1700004500000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "search-index"
+      }
+    },
+    {
+      "trace_id": "tr_42_77_gateway_recs",
+      "span_id": "sp_895529",
+      "parent_id": "",
+      "service": "gateway",
+      "name": "call recs",
+      "start_ts": 1700004620000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "recs"
+      }
+    },
+    {
+      "trace_id": "tr_42_78_checkout_payments",
+      "span_id": "sp_515610",
+      "parent_id": "",
+      "service": "checkout",
+      "name": "call payments",
+      "start_ts": 1700004680000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "payments"
+      }
+    },
+    {
+      "trace_id": "tr_42_78_checkout_inventory",
+      "span_id": "sp_730141",
+      "parent_id": "",
+      "service": "checkout",
+      "name": "call inventory",
+      "start_ts": 1700004680000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "inventory"
+      }
+    },
+    {
+      "trace_id": "tr_42_78_search_search-index",
+      "span_id": "sp_508764",
+      "parent_id": "",
+      "service": "search",
+      "name": "call search-index",
+      "start_ts": 1700004680000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "search-index"
+      }
+    },
+    {
+      "trace_id": "tr_42_81_cart_redis-cache",
+      "span_id": "sp_562474",
+      "parent_id": "",
+      "service": "cart",
+      "name": "call redis-cache",
+      "start_ts": 1700004860000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "redis-cache"
+      }
+    },
+    {
+      "trace_id": "tr_42_81_gateway_cart",
+      "span_id": "sp_684344",
+      "parent_id": "",
+      "service": "gateway",
+      "name": "call cart",
+      "start_ts": 1700004860000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "cart"
+      }
+    },
+    {
+      "trace_id": "tr_42_82_gateway_checkout",
+      "span_id": "sp_163045",
+      "parent_id": "",
+      "service": "gateway",
+      "name": "call checkout",
+      "start_ts": 1700004920000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "checkout"
+      }
+    },
+    {
+      "trace_id": "tr_42_83_gateway_cart",
+      "span_id": "sp_207141",
+      "parent_id": "",
+      "service": "gateway",
+      "name": "call cart",
+      "start_ts": 1700004980000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "cart"
+      }
+    },
+    {
+      "trace_id": "tr_42_84_gateway_cart",
+      "span_id": "sp_54663",
+      "parent_id": "",
+      "service": "gateway",
+      "name": "call cart",
+      "start_ts": 1700005040000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "cart"
+      }
+    },
+    {
+      "trace_id": "tr_42_86_checkout_notifications",
+      "span_id": "sp_571099",
+      "parent_id": "",
+      "service": "checkout",
+      "name": "call notifications",
+      "start_ts": 1700005160000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "notifications"
+      }
+    },
+    {
+      "trace_id": "tr_42_86_gateway_auth",
+      "span_id": "sp_154536",
+      "parent_id": "",
+      "service": "gateway",
+      "name": "call auth",
+      "start_ts": 1700005160000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "auth"
+      }
+    },
+    {
+      "trace_id": "tr_42_90_payments_psp-external",
+      "span_id": "sp_108712",
+      "parent_id": "",
+      "service": "payments",
+      "name": "call psp-external",
+      "start_ts": 1700005400000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "psp-external"
+      }
+    },
+    {
+      "trace_id": "tr_42_92_catalog_redis-cache",
+      "span_id": "sp_615378",
+      "parent_id": "",
+      "service": "catalog",
+      "name": "call redis-cache",
+      "start_ts": 1700005520000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "redis-cache"
+      }
+    },
+    {
+      "trace_id": "tr_42_92_gateway_search",
+      "span_id": "sp_751623",
+      "parent_id": "",
+      "service": "gateway",
+      "name": "call search",
+      "start_ts": 1700005520000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "search"
+      }
+    },
+    {
+      "trace_id": "tr_42_94_gateway_checkout",
+      "span_id": "sp_350282",
+      "parent_id": "",
+      "service": "gateway",
+      "name": "call checkout",
+      "start_ts": 1700005640000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "checkout"
+      }
+    },
+    {
+      "trace_id": "tr_42_94_gateway_search",
+      "span_id": "sp_924066",
+      "parent_id": "",
+      "service": "gateway",
+      "name": "call search",
+      "start_ts": 1700005640000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "search"
+      }
+    },
+    {
+      "trace_id": "tr_42_95_catalog_catalog-db",
+      "span_id": "sp_296766",
+      "parent_id": "",
+      "service": "catalog",
+      "name": "call catalog-db",
+      "start_ts": 1700005700000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "catalog-db"
+      }
+    },
+    {
+      "trace_id": "tr_42_95_checkout_inventory",
+      "span_id": "sp_921407",
+      "parent_id": "",
+      "service": "checkout",
+      "name": "call inventory",
+      "start_ts": 1700005700000,
+      "duration_ms": 800,
+      "status": "ERROR",
+      "attrs": {
+        "peer.service": "inventory"
+      }
+    },
+    {
+      "trace_id": "tr_42_96_catalog_catalog-db",
+      "span_id": "sp_126914",
+      "parent_id": "",
+      "service": "catalog",
+      "name": "call catalog-db",
+      "start_ts": 1700005760000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "catalog-db"
+      }
+    },
+    {
+      "trace_id": "tr_42_96_gateway_recs",
+      "span_id": "sp_780769",
+      "parent_id": "",
+      "service": "gateway",
+      "name": "call recs",
+      "start_ts": 1700005760000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "recs"
+      }
+    },
+    {
+      "trace_id": "tr_42_98_recs_feature-store",
+      "span_id": "sp_852096",
+      "parent_id": "",
+      "service": "recs",
+      "name": "call feature-store",
+      "start_ts": 1700005880000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "feature-store"
+      }
+    },
+    {
+      "trace_id": "tr_42_99_checkout_cart",
+      "span_id": "sp_651722",
+      "parent_id": "",
+      "service": "checkout",
+      "name": "call cart",
+      "start_ts": 1700005940000,
+      "duration_ms": 400,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "cart"
+      }
+    },
+    {
+      "trace_id": "tr_42_99_payments_psp-external",
+      "span_id": "sp_997162",
+      "parent_id": "",
+      "service": "payments",
+      "name": "call psp-external",
+      "start_ts": 1700005940000,
+      "duration_ms": 650,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "psp-external"
+      }
+    },
+    {
+      "trace_id": "tr_42_100_cart_redis-cache",
+      "span_id": "sp_305003",
+      "parent_id": "",
+      "service": "cart",
+      "name": "call redis-cache",
+      "start_ts": 1700006000000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "redis-cache"
+      }
+    },
+    {
+      "trace_id": "tr_42_100_catalog_redis-cache",
+      "span_id": "sp_847286",
+      "parent_id": "",
+      "service": "catalog",
+      "name": "call redis-cache",
+      "start_ts": 1700006000000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "redis-cache"
+      }
+    },
+    {
+      "trace_id": "tr_42_101_checkout_payments",
+      "span_id": "sp_706643",
+      "parent_id": "",
+      "service": "checkout",
+      "name": "call payments",
+      "start_ts": 1700006060000,
+      "duration_ms": 400,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "payments"
+      }
+    },
+    {
+      "trace_id": "tr_42_102_checkout_inventory",
+      "span_id": "sp_584830",
+      "parent_id": "",
+      "service": "checkout",
+      "name": "call inventory",
+      "start_ts": 1700006120000,
+      "duration_ms": 800,
+      "status": "ERROR",
+      "attrs": {
+        "peer.service": "inventory"
+      }
+    },
+    {
+      "trace_id": "tr_42_102_edge-lb_gateway",
+      "span_id": "sp_643174",
+      "parent_id": "",
+      "service": "edge-lb",
+      "name": "call gateway",
+      "start_ts": 1700006120000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "gateway"
+      }
+    },
+    {
+      "trace_id": "tr_42_105_gateway_cart",
+      "span_id": "sp_551554",
+      "parent_id": "",
+      "service": "gateway",
+      "name": "call cart",
+      "start_ts": 1700006300000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "cart"
+      }
+    },
+    {
+      "trace_id": "tr_42_105_recs_feature-store",
+      "span_id": "sp_493680",
+      "parent_id": "",
+      "service": "recs",
+      "name": "call feature-store",
+      "start_ts": 1700006300000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "feature-store"
+      }
+    },
+    {
+      "trace_id": "tr_42_106_payments_psp-external",
+      "span_id": "sp_404416",
+      "parent_id": "",
+      "service": "payments",
+      "name": "call psp-external",
+      "start_ts": 1700006360000,
+      "duration_ms": 650,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "psp-external"
+      }
+    },
+    {
+      "trace_id": "tr_42_107_search_search-index",
+      "span_id": "sp_186815",
+      "parent_id": "",
+      "service": "search",
+      "name": "call search-index",
+      "start_ts": 1700006420000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "search-index"
+      }
+    },
+    {
+      "trace_id": "tr_42_108_cart_catalog",
+      "span_id": "sp_127456",
+      "parent_id": "",
+      "service": "cart",
+      "name": "call catalog",
+      "start_ts": 1700006480000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "catalog"
+      }
+    },
+    {
+      "trace_id": "tr_42_108_checkout_payments",
+      "span_id": "sp_307485",
+      "parent_id": "",
+      "service": "checkout",
+      "name": "call payments",
+      "start_ts": 1700006480000,
+      "duration_ms": 800,
+      "status": "ERROR",
+      "attrs": {
+        "peer.service": "payments"
+      }
+    },
+    {
+      "trace_id": "tr_42_108_checkout_notifications",
+      "span_id": "sp_666877",
+      "parent_id": "",
+      "service": "checkout",
+      "name": "call notifications",
+      "start_ts": 1700006480000,
+      "duration_ms": 400,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "notifications"
+      }
+    },
+    {
+      "trace_id": "tr_42_110_notifications_queue",
+      "span_id": "sp_972439",
+      "parent_id": "",
+      "service": "notifications",
+      "name": "call queue",
+      "start_ts": 1700006600000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "queue"
+      }
+    },
+    {
+      "trace_id": "tr_42_113_cart_redis-cache",
+      "span_id": "sp_430733",
+      "parent_id": "",
+      "service": "cart",
+      "name": "call redis-cache",
+      "start_ts": 1700006780000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "redis-cache"
+      }
+    },
+    {
+      "trace_id": "tr_42_114_checkout_inventory",
+      "span_id": "sp_440417",
+      "parent_id": "",
+      "service": "checkout",
+      "name": "call inventory",
+      "start_ts": 1700006840000,
+      "duration_ms": 400,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "inventory"
+      }
+    },
+    {
+      "trace_id": "tr_42_115_edge-lb_gateway",
+      "span_id": "sp_403734",
+      "parent_id": "",
+      "service": "edge-lb",
+      "name": "call gateway",
+      "start_ts": 1700006900000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "gateway"
+      }
+    },
+    {
+      "trace_id": "tr_42_115_gateway_auth",
+      "span_id": "sp_875959",
+      "parent_id": "",
+      "service": "gateway",
+      "name": "call auth",
+      "start_ts": 1700006900000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "auth"
+      }
+    },
+    {
+      "trace_id": "tr_42_116_payments_psp-external",
+      "span_id": "sp_326276",
+      "parent_id": "",
+      "service": "payments",
+      "name": "call psp-external",
+      "start_ts": 1700006960000,
+      "duration_ms": 1300,
+      "status": "ERROR",
+      "attrs": {
+        "peer.service": "psp-external"
+      }
+    },
+    {
+      "trace_id": "tr_42_117_cart_catalog",
+      "span_id": "sp_461631",
+      "parent_id": "",
+      "service": "cart",
+      "name": "call catalog",
+      "start_ts": 1700007020000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "catalog"
+      }
+    },
+    {
+      "trace_id": "tr_42_117_checkout_payments",
+      "span_id": "sp_25318",
+      "parent_id": "",
+      "service": "checkout",
+      "name": "call payments",
+      "start_ts": 1700007020000,
+      "duration_ms": 400,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "payments"
+      }
+    },
+    {
+      "trace_id": "tr_42_119_gateway_catalog",
+      "span_id": "sp_321141",
+      "parent_id": "",
+      "service": "gateway",
+      "name": "call catalog",
+      "start_ts": 1700007140000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "catalog"
+      }
+    },
+    {
+      "trace_id": "tr_42_119_gateway_cart",
+      "span_id": "sp_590731",
+      "parent_id": "",
+      "service": "gateway",
+      "name": "call cart",
+      "start_ts": 1700007140000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "cart"
+      }
+    },
+    {
+      "trace_id": "tr_42_120_gateway_catalog",
+      "span_id": "sp_479445",
+      "parent_id": "",
+      "service": "gateway",
+      "name": "call catalog",
+      "start_ts": 1700007200000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "catalog"
+      }
+    },
+    {
+      "trace_id": "tr_42_123_catalog_redis-cache",
+      "span_id": "sp_438031",
+      "parent_id": "",
+      "service": "catalog",
+      "name": "call redis-cache",
+      "start_ts": 1700007380000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "redis-cache"
+      }
+    },
+    {
+      "trace_id": "tr_42_123_checkout_notifications",
+      "span_id": "sp_174989",
+      "parent_id": "",
+      "service": "checkout",
+      "name": "call notifications",
+      "start_ts": 1700007380000,
+      "duration_ms": 400,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "notifications"
+      }
+    },
+    {
+      "trace_id": "tr_42_123_gateway_auth",
+      "span_id": "sp_796672",
+      "parent_id": "",
+      "service": "gateway",
+      "name": "call auth",
+      "start_ts": 1700007380000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "auth"
+      }
+    },
+    {
+      "trace_id": "tr_42_123_gateway_search",
+      "span_id": "sp_971554",
+      "parent_id": "",
+      "service": "gateway",
+      "name": "call search",
+      "start_ts": 1700007380000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "search"
+      }
+    },
+    {
+      "trace_id": "tr_42_123_payments_payments-db",
+      "span_id": "sp_730707",
+      "parent_id": "",
+      "service": "payments",
+      "name": "call payments-db",
+      "start_ts": 1700007380000,
+      "duration_ms": 650,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "payments-db"
+      }
+    },
+    {
+      "trace_id": "tr_42_124_checkout_notifications",
+      "span_id": "sp_716735",
+      "parent_id": "",
+      "service": "checkout",
+      "name": "call notifications",
+      "start_ts": 1700007440000,
+      "duration_ms": 400,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "notifications"
+      }
+    },
+    {
+      "trace_id": "tr_42_126_catalog_catalog-db",
+      "span_id": "sp_593093",
+      "parent_id": "",
+      "service": "catalog",
+      "name": "call catalog-db",
+      "start_ts": 1700007560000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "catalog-db"
+      }
+    },
+    {
+      "trace_id": "tr_42_126_search_search-index",
+      "span_id": "sp_996112",
+      "parent_id": "",
+      "service": "search",
+      "name": "call search-index",
+      "start_ts": 1700007560000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "search-index"
+      }
+    },
+    {
+      "trace_id": "tr_42_127_gateway_auth",
+      "span_id": "sp_11757",
+      "parent_id": "",
+      "service": "gateway",
+      "name": "call auth",
+      "start_ts": 1700007620000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "auth"
+      }
+    },
+    {
+      "trace_id": "tr_42_129_search_search-index",
+      "span_id": "sp_447461",
+      "parent_id": "",
+      "service": "search",
+      "name": "call search-index",
+      "start_ts": 1700007740000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "search-index"
+      }
+    },
+    {
+      "trace_id": "tr_42_130_catalog_redis-cache",
+      "span_id": "sp_143720",
+      "parent_id": "",
+      "service": "catalog",
+      "name": "call redis-cache",
+      "start_ts": 1700007800000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "redis-cache"
+      }
+    },
+    {
+      "trace_id": "tr_42_132_catalog_redis-cache",
+      "span_id": "sp_215094",
+      "parent_id": "",
+      "service": "catalog",
+      "name": "call redis-cache",
+      "start_ts": 1700007920000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "redis-cache"
+      }
+    },
+    {
+      "trace_id": "tr_42_132_payments_payments-db",
+      "span_id": "sp_255929",
+      "parent_id": "",
+      "service": "payments",
+      "name": "call payments-db",
+      "start_ts": 1700007920000,
+      "duration_ms": 650,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "payments-db"
+      }
+    },
+    {
+      "trace_id": "tr_42_133_queue_email-worker",
+      "span_id": "sp_385354",
+      "parent_id": "",
+      "service": "queue",
+      "name": "call email-worker",
+      "start_ts": 1700007980000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "email-worker"
+      }
+    },
+    {
+      "trace_id": "tr_42_134_gateway_auth",
+      "span_id": "sp_438699",
+      "parent_id": "",
+      "service": "gateway",
+      "name": "call auth",
+      "start_ts": 1700008040000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "auth"
+      }
+    },
+    {
+      "trace_id": "tr_42_134_notifications_queue",
+      "span_id": "sp_900560",
+      "parent_id": "",
+      "service": "notifications",
+      "name": "call queue",
+      "start_ts": 1700008040000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "queue"
+      }
+    },
+    {
+      "trace_id": "tr_42_135_payments_payments-db",
+      "span_id": "sp_967365",
+      "parent_id": "",
+      "service": "payments",
+      "name": "call payments-db",
+      "start_ts": 1700008100000,
+      "duration_ms": 1300,
+      "status": "ERROR",
+      "attrs": {
+        "peer.service": "payments-db"
+      }
+    },
+    {
+      "trace_id": "tr_42_136_catalog_catalog-db",
+      "span_id": "sp_262774",
+      "parent_id": "",
+      "service": "catalog",
+      "name": "call catalog-db",
+      "start_ts": 1700008160000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "catalog-db"
+      }
+    },
+    {
+      "trace_id": "tr_42_136_gateway_checkout",
+      "span_id": "sp_864367",
+      "parent_id": "",
+      "service": "gateway",
+      "name": "call checkout",
+      "start_ts": 1700008160000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "checkout"
+      }
+    },
+    {
+      "trace_id": "tr_42_138_checkout_cart",
+      "span_id": "sp_193752",
+      "parent_id": "",
+      "service": "checkout",
+      "name": "call cart",
+      "start_ts": 1700008280000,
+      "duration_ms": 400,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "cart"
+      }
+    },
+    {
+      "trace_id": "tr_42_139_checkout_notifications",
+      "span_id": "sp_216357",
+      "parent_id": "",
+      "service": "checkout",
+      "name": "call notifications",
+      "start_ts": 1700008340000,
+      "duration_ms": 800,
+      "status": "ERROR",
+      "attrs": {
+        "peer.service": "notifications"
+      }
+    },
+    {
+      "trace_id": "tr_42_140_gateway_cart",
+      "span_id": "sp_560968",
+      "parent_id": "",
+      "service": "gateway",
+      "name": "call cart",
+      "start_ts": 1700008400000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "cart"
+      }
+    },
+    {
+      "trace_id": "tr_42_142_gateway_catalog",
+      "span_id": "sp_27527",
+      "parent_id": "",
+      "service": "gateway",
+      "name": "call catalog",
+      "start_ts": 1700008520000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "catalog"
+      }
+    },
+    {
+      "trace_id": "tr_42_142_gateway_cart",
+      "span_id": "sp_694197",
+      "parent_id": "",
+      "service": "gateway",
+      "name": "call cart",
+      "start_ts": 1700008520000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "cart"
+      }
+    },
+    {
+      "trace_id": "tr_42_143_checkout_cart",
+      "span_id": "sp_240207",
+      "parent_id": "",
+      "service": "checkout",
+      "name": "call cart",
+      "start_ts": 1700008580000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "cart"
+      }
+    },
+    {
+      "trace_id": "tr_42_143_notifications_queue",
+      "span_id": "sp_114259",
+      "parent_id": "",
+      "service": "notifications",
+      "name": "call queue",
+      "start_ts": 1700008580000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "queue"
+      }
+    },
+    {
+      "trace_id": "tr_42_143_search_search-index",
+      "span_id": "sp_60318",
+      "parent_id": "",
+      "service": "search",
+      "name": "call search-index",
+      "start_ts": 1700008580000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "search-index"
+      }
+    },
+    {
+      "trace_id": "tr_42_144_gateway_recs",
+      "span_id": "sp_427064",
+      "parent_id": "",
+      "service": "gateway",
+      "name": "call recs",
+      "start_ts": 1700008640000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "recs"
+      }
+    },
+    {
+      "trace_id": "tr_42_144_recs_feature-store",
+      "span_id": "sp_766224",
+      "parent_id": "",
+      "service": "recs",
+      "name": "call feature-store",
+      "start_ts": 1700008640000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "feature-store"
+      }
+    },
+    {
+      "trace_id": "tr_42_148_gateway_catalog",
+      "span_id": "sp_469010",
+      "parent_id": "",
+      "service": "gateway",
+      "name": "call catalog",
+      "start_ts": 1700008880000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "catalog"
+      }
+    },
+    {
+      "trace_id": "tr_42_148_queue_email-worker",
+      "span_id": "sp_810100",
+      "parent_id": "",
+      "service": "queue",
+      "name": "call email-worker",
+      "start_ts": 1700008880000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "email-worker"
+      }
+    },
+    {
+      "trace_id": "tr_42_149_checkout_cart",
+      "span_id": "sp_377862",
+      "parent_id": "",
+      "service": "checkout",
+      "name": "call cart",
+      "start_ts": 1700008940000,
+      "duration_ms": 50,
+      "status": "OK",
+      "attrs": {
+        "peer.service": "cart"
+      }
+    }
+  ]
+}

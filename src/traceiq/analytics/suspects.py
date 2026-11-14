@@ -69,6 +69,8 @@ def confidence_from_margin(suspects: list[Suspect]) -> float:
     if not suspects:
         return 0.0
     if len(suspects) == 1:
-        return min(0.9, 0.4 + suspects[0].score / 10.0)
+        return min(0.9, 0.45 + suspects[0].score / 8.0)
     gap = suspects[0].score - suspects[1].score
-    return max(0.05, min(0.95, gap / max(suspects[0].score, 1e-9)))
+    margin = gap / max(suspects[0].score, 1e-9)
+    strength = min(1.0, suspects[0].score / 6.0)
+    return max(0.05, min(0.95, 0.35 * margin + 0.55 * strength))

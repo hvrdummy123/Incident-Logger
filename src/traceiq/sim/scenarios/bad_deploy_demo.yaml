@@ -1,0 +1,20 @@
+id: bad_deploy_demo
+seed: 7
+split: demo
+duration_min: 120
+incident_window: {start_min: 70, end_min: 110}
+fault: {type: bad_deploy, service: payments, params: {}}
+decoys: [unrelated_deploy, innocent_deploy_before_onset]
+telemetry_gaps: []
+injections: []
+pii: false
+ground_truth:
+  root_cause_service: payments
+  category: bad_deploy
+  trigger_change_id: chg_trigger_7
+  onset_min: 72
+  blast_radius: [payments, checkout, gateway]
+  gold_templates:
+    - "Unhandled exception in handler: NullPointerException"
+    - "request failed after deploy of payments"
+  solvable: true

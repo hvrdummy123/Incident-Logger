@@ -1,0 +1,19 @@
+id: bad_deploy_train_0
+seed: 0
+split: train
+duration_min: 90
+incident_window: {start_min: 40, end_min: 80}
+fault: {type: bad_deploy, service: checkout, params: {}}
+decoys: [unrelated_deploy]
+telemetry_gaps: []
+injections: []
+pii: false
+ground_truth:
+  root_cause_service: checkout
+  category: bad_deploy
+  trigger_change_id: chg_trigger_0
+  onset_min: 42
+  blast_radius: [checkout, gateway]
+  gold_templates:
+    - "Unhandled exception in handler: NullPointerException"
+  solvable: true

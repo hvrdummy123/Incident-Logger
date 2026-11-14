@@ -1,0 +1,24 @@
+id: db_pool_demo
+seed: 42
+split: demo
+duration_min: 150
+incident_window: {start_min: 90, end_min: 140}
+fault:
+  type: db_pool_exhaustion
+  service: payments-db
+  params: {pool_size: 20, leak_rate: 0.8}
+decoys: [unrelated_deploy, hourly_batch_spike, innocent_deploy_before_onset]
+telemetry_gaps:
+  - {service: inventory, logs: missing}
+injections: []
+pii: false
+ground_truth:
+  root_cause_service: payments
+  category: resource_exhaustion
+  trigger_change_id: null
+  onset_min: 93
+  blast_radius: [payments, checkout, gateway]
+  gold_templates:
+    - "pool timeout waiting for connection"
+    - "failed to checkout connection"
+  solvable: true

@@ -2,29 +2,33 @@
 
 ## What exists
 
-- Original TraceIQ repo. M0–M3 landed.
-- **Tenancy (security):** app-scoped getters, Postgres RLS via `traceiq_app`, filesystem sandbox under `data/<workspace_id>/`. See `docs/THREAT_MODEL.md`. Tests in `tests/security/test_tenancy_isolation.py`.
-- **Ingest:** jsonl/logfmt/nginx/cri/syslog/plain + stack grouping, format detect, Drain, parse report, Parquet writer, DuckDB query, `traceiq ingest --dry-run`.
-- **Analytics:** robust-z/CUSUM, new templates, change correlation, service graph, suspect ranking with contributions, compare_windows, timeline, `build_briefing()`.
+- Original TraceIQ repo. **M0–M5** landed.
+- Tenancy: app scope + RLS (`traceiq_app`) + path sandbox. See `docs/THREAT_MODEL.md`.
+- Ingest + analytics briefing.
+- Simulator (deterministic), three demo bundles under `demo/`, answer keys under `demo/answers/`.
+- Eval harness: `traceiq eval run --suite demo|dev|train` with oracle / deterministic / most_errors / latest_deploy.
+- Gate check (demo split): oracle top-1 = 1.0; latest_deploy < 1.0 (decoys work); deterministic > latest_deploy.
 
 ## How to run
 
 ```bash
 docker compose up -d postgres
-PGPASSWORD=traceiq psql -h 127.0.0.1 -p 55432 -U traceiq -d traceiq -f scripts/init_app_role.sql
-TRACEIQ_MIGRATE_URL=postgresql+psycopg://traceiq:traceiq@localhost:55432/traceiq uv run alembic upgrade head
-uv run pytest tests/unit tests/ingest tests/security -q
+./scripts/make_demo.sh
+uv run pytest tests/ -q --ignore=tests/e2e --ignore=tests/perf --ignore=tests/chaos
+uv run traceiq eval run --suite demo --agents oracle,deterministic,latest_deploy,most_errors
+uv run traceiq demo list
 uv run traceiq ingest samples/formats/jsonl.log --dry-run
-uv run traceiq doctor
 ```
 
 ## Known problems
 
-- Runtime DB URL must use `traceiq_app` (not superuser `traceiq`) or RLS is bypassed.
-- Host Postgres port is **55432**.
+- Runtime DB must use `traceiq_app` (not superuser).
+- Postgres on host port **55432**.
+- Deterministic still misses cache-stampede sometimes (ranks decoy `cart`) — noted for weight tuning on train only in a later pass.
+- Demo bundles are generated artifacts; regenerate with `./scripts/make_demo.sh`.
 
 ## Next 3 steps
 
-1. M4 simulator + demo bundles.
-2. M5 eval harness / baselines.
-3. M6/M8 keep hammering cross-tenant API tests as routes appear.
+1. M6 safety: redaction, egress gateway, injection detector, NO_EXTERNAL_LLM.
+2. M7 agent runtime + verifier.
+3. M8 API with cross-tenant route security tests.

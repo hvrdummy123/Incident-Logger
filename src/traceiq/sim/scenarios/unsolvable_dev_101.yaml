@@ -1,0 +1,19 @@
+id: unsolvable_dev_101
+seed: 101
+split: dev
+duration_min: 60
+incident_window: {start_min: 20, end_min: 40}
+fault: {type: bad_deploy, service: search, params: {}}
+decoys: [hourly_batch_spike]
+telemetry_gaps:
+  - {service: search, logs: missing}
+injections: []
+pii: false
+ground_truth:
+  root_cause_service: search
+  category: bad_deploy
+  trigger_change_id: null
+  onset_min: 22
+  blast_radius: [search]
+  gold_templates: []
+  solvable: false

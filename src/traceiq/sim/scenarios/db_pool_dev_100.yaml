@@ -1,0 +1,19 @@
+id: db_pool_dev_100
+seed: 100
+split: dev
+duration_min: 100
+incident_window: {start_min: 50, end_min: 90}
+fault: {type: db_pool_exhaustion, service: payments-db, params: {pool_size: 20}}
+decoys: [innocent_deploy_before_onset, unrelated_deploy]
+telemetry_gaps: []
+injections: []
+pii: false
+ground_truth:
+  root_cause_service: payments
+  category: resource_exhaustion
+  trigger_change_id: null
+  onset_min: 52
+  blast_radius: [payments, checkout]
+  gold_templates:
+    - "pool timeout waiting for connection"
+  solvable: true

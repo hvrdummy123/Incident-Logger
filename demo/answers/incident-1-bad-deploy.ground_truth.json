@@ -1,0 +1,16 @@
+{
+  "root_cause_service": "payments",
+  "category": "bad_deploy",
+  "trigger_change_id": "chg_trigger_7",
+  "onset_min": 72,
+  "blast_radius": [
+    "payments",
+    "checkout",
+    "gateway"
+  ],
+  "gold_templates": [
+    "Unhandled exception in handler: NullPointerException",
+    "request failed after deploy of payments"
+  ],
+  "solvable": true
+}
