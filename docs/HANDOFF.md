@@ -2,33 +2,28 @@
 
 ## What exists
 
-- Original TraceIQ repo. **M0–M10** landed.
-- Tenancy: app scope + RLS (`traceiq_app`) + path sandbox; API cross-tenant 404s.
-- Safety: redaction, egress gateway (`NO_EXTERNAL_LLM`), injection scanner.
-- Agent: state machine, mock provider, verifier, investigation runtime.
-- API + worker + web compose stack; `docs/RUNBOOK.md`.
-- Web: Vite/React — incidents, BYO wizard, investigation, report.
+- Original TraceIQ repo. **M0–M11** landed (M12 stretch optional).
+- See `REPORT.md` for measured test/eval numbers (2026-11-14).
+- Compose: `docker compose up -d --build` → UI :8080, API :8000, Postgres host :55432.
 
 ## How to run
 
 ```bash
 docker compose up -d --build
-# UI http://localhost:8080  API :8000  Postgres host :55432
-
 uv run pytest tests/ -q --ignore=tests/e2e --ignore=tests/perf --ignore=tests/chaos
 cd web && npm test && npm run build
+uv run traceiq eval run --suite demo --agents oracle,deterministic,latest_deploy
 ```
 
 ## Known problems
 
-- Live Anthropic/OpenAI providers are seams only.
-- Investigation step durability/resume incomplete; SSE uses in-memory cache.
-- Worker handlers are empty stubs (unknown kinds dead-letter).
-- Playwright/axe e2e and Grafana dashboard JSON still TODO.
-- OIDC not wired.
+- Held-out `test` eval split is empty (n=0).
+- Live LLM providers not wired; no API keys used.
+- Investigation durability / worker handlers / Playwright still thin.
+- Deterministic miss on cache stampede.
 
 ## Next 3 steps
 
-1. M11 docs — ARCHITECTURE diagrams, REPORT.md with measured numbers.
-2. Persist investigation steps / resume against Postgres.
-3. Wire real worker job handlers + optional Playwright smoke.
+1. Seed a local user for compose UI login; walk `docs/HUMAN_TEST.md`.
+2. Freeze held-out scenarios; run test split once; update `docs/EVAL.md`.
+3. Optional M12: Playwright smoke, Grafana JSON, live provider HTTP.

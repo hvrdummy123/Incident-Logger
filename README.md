@@ -23,7 +23,7 @@ Product name is **TraceIQ**. The installable distribution is `traceiq-incident` 
 
 ## Status
 
-**M0–M9 core** landed (API + UI: incidents, BYO wizard, investigation, report). See `docs/PLAN.md` and `docs/HANDOFF.md`.
+**M0–M11** landed (compose stack + UI + measured `REPORT.md`). Optional stretch is M12. See `docs/PLAN.md`, `docs/HANDOFF.md`, and `REPORT.md`.
 
 ## License
 
