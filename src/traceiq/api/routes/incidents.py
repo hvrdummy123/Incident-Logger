@@ -32,7 +32,7 @@ class CreateIncident(BaseModel):
     dataset_ids: list[str] = Field(default_factory=list)
     source: str = "upload"
     # Optional BYO payload — stored under the workspace dataset sandbox.
-    log_text: str | None = Field(default=None, max_length=2_000_000)
+    log_text: str | None = Field(default=None, max_length=40_000_000)
     filename: str = "upload.log"
 
 

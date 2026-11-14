@@ -64,8 +64,10 @@ export function ByoWizardPage() {
   async function onFile(file: File | null) {
     setError(null);
     if (!file) return;
-    if (file.size > 2_000_000) {
-      setError("File is larger than 2 MB for preview. Split it or use the CLI ingest path.");
+    if (file.size > 40_000_000) {
+      setError(
+        "File is larger than 40 MB for browser upload. Split it, or use `traceiq ingest` / a smaller window export.",
+      );
       return;
     }
     const buf = await file.arrayBuffer();

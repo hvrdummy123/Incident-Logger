@@ -8,7 +8,7 @@ from pathlib import Path
 from typing import Any
 
 from traceiq.agent.budgets import Budget
-from traceiq.agent.schema import Report, RootCause, RunMeta, parse_report
+from traceiq.agent.schema import Report, parse_report
 from traceiq.agent.state import Status, can_transition
 from traceiq.agent.tools import ToolContext, run_tool
 from traceiq.agent.verify import verify_report
@@ -47,39 +47,9 @@ def _system_prompt() -> str:
 
 
 def _deterministic_report(briefing: dict[str, Any], *, model: str) -> Report:
-    suspects = briefing.get("suspects") or []
-    top = suspects[0]["service"] if suspects else ""
-    conf = float(briefing.get("confidence") or 0.0)
-    outcome = "root_cause_found" if top and conf >= 0.25 else "abstained"
-    trigger = None
-    hits = briefing.get("change_hits") or []
-    if hits:
-        trigger = hits[0].get("change_id")
-    return Report(
-        summary=(
-            f"Deterministic briefing points to {top}."
-            if outcome == "root_cause_found"
-            else "Deterministic briefing lacked a clear root cause."
-        ),
-        outcome=outcome,  # type: ignore[arg-type]
-        confidence=conf,
-        root_cause=RootCause(
-            service=top if outcome == "root_cause_found" else "",
-            category="",
-            trigger_change_id=trigger,
-            explanation="from deterministic suspect ranking",
-            evidence=[],
-        ),
-        data_gaps=list(briefing.get("data_gaps") or []),
-        run=RunMeta(
-            model=model,
-            prompt_version=PROMPT_VERSION,
-            steps=0,
-            tokens=0,
-            cost_usd=0.0,
-            deterministic_only=True,
-        ),
-    )
+    from traceiq.agent.narrative import build_narrative_report
+
+    return build_narrative_report(briefing, model=model, deterministic_only=True)
 
 
 def run_investigation(

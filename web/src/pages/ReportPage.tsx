@@ -23,6 +23,7 @@ type ReportJson = {
   suggested_actions?: Array<{ text: string; type?: string; risk?: string }>;
   data_gaps?: string[];
   open_questions?: string[];
+  contributing_factors?: Array<{ text: string; evidence?: string[] }>;
   run?: { model?: string; cost_usd?: number; deterministic_only?: boolean; steps?: number };
 };
 
@@ -255,6 +256,19 @@ export function ReportPage() {
         <ul>
           {(body.data_gaps ?? []).map((g, i) => (
             <li key={i}>{g}</li>
+          ))}
+        </ul>
+      </section>
+
+      <section>
+        <h2>What would sharpen this</h2>
+        <p className="muted">
+          Real outages are messy. TraceIQ will still summarize from partial logs — send more of
+          this if you have it.
+        </p>
+        <ul>
+          {(body.open_questions ?? []).map((q, i) => (
+            <li key={i}>{q}</li>
           ))}
         </ul>
       </section>

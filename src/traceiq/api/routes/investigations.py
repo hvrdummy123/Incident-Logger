@@ -55,6 +55,16 @@ def _report_markdown(report: Any) -> str:
         lines.append(f"- {g}")
     if not report.data_gaps:
         lines.append("- —")
+    lines.extend(["", "## What would sharpen this"])
+    for q in report.open_questions:
+        lines.append(f"- {q}")
+    if not report.open_questions:
+        lines.append("- —")
+    lines.extend(["", "## Contributing factors"])
+    for f in report.contributing_factors:
+        lines.append(f"- {f.text}")
+    if not report.contributing_factors:
+        lines.append("- —")
     return "\n".join(lines) + "\n"
 
 

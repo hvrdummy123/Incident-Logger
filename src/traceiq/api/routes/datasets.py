@@ -20,7 +20,7 @@ router = APIRouter(prefix="/datasets", tags=["datasets"])
 
 
 class PreviewBody(BaseModel):
-    text: str = Field(..., min_length=1, max_length=2_000_000)
+    text: str = Field(..., min_length=1, max_length=40_000_000)
     filename: str = "upload.log"
 
 
@@ -38,11 +38,17 @@ def preview_dataset(
             "Bad Request",
             "File looks binary. Upload a text log, or strip null bytes and retry.",
         )
+    # Large industry slices: preview on a head sample so the wizard stays responsive.
+    preview_text = body.text
+    sampled = False
+    if len(body.text) > 1_500_000:
+        preview_text = "\n".join(body.text.splitlines()[:8000]) + "\n"
+        sampled = True
     suffix = Path(body.filename).suffix or ".log"
     with tempfile.NamedTemporaryFile(
         mode="w", encoding="utf-8", suffix=suffix, delete=False
     ) as tmp:
-        tmp.write(body.text)
+        tmp.write(preview_text)
         tmp_path = Path(tmp.name)
     try:
         result = ingest_file(tmp_path, dry_run=True)
@@ -50,10 +56,17 @@ def preview_dataset(
         tmp_path.unlink(missing_ok=True)
 
     redaction = redaction_preview(body.text[:50_000])
+    report = result.report.to_dict()
+    if sampled:
+        report["note"] = (
+            "Parse preview sampled the first ~8000 lines; full file is used on incident create."
+        )
     return {
         "filename": body.filename,
         "detected_format": result.report.format,
         "detect_confidence": result.report.detect_confidence,
-        "parse_report": result.report.to_dict(),
+        "parse_report": report,
         "redaction": redaction,
+        "bytes": len(body.text.encode("utf-8")),
+        "preview_sampled": sampled,
     }
