@@ -1,0 +1,55 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: traceiq
+          POSTGRES_PASSWORD: traceiq
+          POSTGRES_DB: traceiq
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U traceiq"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+    env:
+      TRACEIQ_DATABASE_URL: postgresql+psycopg://traceiq:traceiq@localhost:5432/traceiq
+      # CI service maps container 5432 → host 5432; local compose uses host 5433.
+      TRACEIQ_JWT_SECRET: ci-test-secret-not-for-prod
+      TRACEIQ_REDACTION_KEY: ci-redaction-key
+      TRACEIQ_MODEL: mock:mock-v1
+      TRACEIQ_NO_EXTERNAL_LLM: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v4
+        with:
+          python-version: "3.12"
+      - run: uv sync --extra dev
+      - run: uv run ruff check src tests
+      - run: uv run mypy src/traceiq
+      - run: uv run pytest -n auto --ignore=tests/perf --ignore=tests/chaos --ignore=tests/e2e
+      - run: uv run pip-audit || true
+
+  web:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: web
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+      - run: |
+          if [ -f package.json ]; then npm ci && npx tsc --noEmit && npm test --if-present; else echo "web package not ready yet"; fi
