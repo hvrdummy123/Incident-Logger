@@ -287,9 +287,19 @@ table.data tbody tr:hover {
 
 .investigation {
   display: grid;
-  grid-template-columns: 280px 1fr 300px;
+  grid-template-columns: minmax(220px, 280px) minmax(0, 1fr) minmax(220px, 300px);
   gap: var(--space-3);
-  min-height: 70vh;
+  align-items: start;
+}
+
+.inv-pane-switch {
+  display: none;
+  margin-bottom: var(--space-3);
+}
+
+.inv-show,
+.inv-hide-narrow {
+  min-width: 0;
 }
 
 .pane {
@@ -437,6 +447,18 @@ table.data tbody tr:hover {
 
   .investigation {
     grid-template-columns: 1fr;
+  }
+
+  .inv-pane-switch {
+    display: flex;
+  }
+
+  .inv-hide-narrow {
+    display: none;
+  }
+
+  .inv-show {
+    display: block;
   }
 }
 

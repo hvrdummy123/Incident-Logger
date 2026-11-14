@@ -121,7 +121,7 @@ export type Investigation = {
   model: string;
   outcome: string | null;
   spent_usd: number | null;
-  report_id?: string | null;
+  report_id: string | null;
   steps?: number;
 };
 

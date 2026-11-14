@@ -12,7 +12,7 @@ export function InvestigationPage() {
   const [steps, setSteps] = useState<StepEvent[]>([]);
   const [follow, setFollow] = useState(true);
   const [tab, setTab] = useState<"timeline" | "graph">("timeline");
-  const [narrowTab, setNarrowTab] = useState<"steps" | "center" | "hypotheses">("center");
+  const [activePane, setActivePane] = useState<"steps" | "timeline" | "hypotheses">("steps");
   const streamRef = useRef<HTMLDivElement>(null);
   const [streamError, setStreamError] = useState<string | null>(null);
 
@@ -28,6 +28,7 @@ export function InvestigationPage() {
     const wid = localStorage.getItem("traceiq.workspace");
     const ctrl = new AbortController();
     setStreamError(null);
+    setSteps([]);
     void (async () => {
       try {
         const headers: Record<string, string> = {};
@@ -98,9 +99,7 @@ export function InvestigationPage() {
     );
   }
 
-  const reportLink =
-    (inv.data as Investigation & { report_id?: string }).report_id ??
-    null;
+  const reportId = inv.data.report_id ?? null;
 
   const stepsPane = (
     <section className="pane">
@@ -112,15 +111,15 @@ export function InvestigationPage() {
       </h2>
       <div className="pane-body" ref={streamRef} aria-live="polite">
         {streamError && <div className="error-box">{streamError}</div>}
-        {steps.length === 0 && <p className="muted">Waiting for steps…</p>}
+        {steps.length === 0 && !streamError && (
+          <p className="muted">No live steps in the stream (run may have finished before open).</p>
+        )}
         {steps.map((s) => (
           <div key={`${s.seq}-${s.name}`} className="step-item">
             <div>
               #{s.seq} · {s.kind} · {s.name}
             </div>
-            {s.args && (
-              <div className="muted">{JSON.stringify(s.args).slice(0, 120)}</div>
-            )}
+            {s.args && <div className="muted">{JSON.stringify(s.args).slice(0, 120)}</div>}
           </div>
         ))}
       </div>
@@ -129,7 +128,7 @@ export function InvestigationPage() {
 
   const centerPane = (
     <section className="pane">
-      <div className="tabs" role="tablist">
+      <div className="tabs" role="tablist" aria-label="Timeline or graph">
         <button
           type="button"
           className="btn"
@@ -236,19 +235,10 @@ export function InvestigationPage() {
         <span className="chip supported">supported · error spike</span>
         <span className="chip refuted">refuted · DNS</span>
         <p className="muted" style={{ marginTop: 12 }}>
-          Evidence drawer opens from report citations. Status: {inv.data.status}
+          Status: {inv.data.status}
           {inv.data.outcome ? ` · ${inv.data.outcome}` : ""}
+          {inv.data.spent_usd != null ? ` · $${inv.data.spent_usd}` : ""}
         </p>
-        {reportLink ? (
-          <p>
-            <Link to={`/reports/${reportLink}`}>Open report</Link>
-          </p>
-        ) : (
-          <p className="muted">
-            If a report was produced, open it from the investigation response after refresh, or check
-            API <span className="mono">report_id</span>.
-          </p>
-        )}
         <Link to={`/incidents/${inv.data.incident_id}`}>Back to incident</Link>
       </div>
     </section>
@@ -259,42 +249,48 @@ export function InvestigationPage() {
       <h1 className="page-title">Investigation</h1>
       <p className="muted mono">{investigationId}</p>
 
-      <div className="tabs" style={{ marginBottom: 8 }} aria-label="Narrow layout tabs">
-        {(["steps", "center", "hypotheses"] as const).map((t) => (
+      <div className="banner" role="status" style={{ display: "flex", gap: 12, flexWrap: "wrap", alignItems: "center" }}>
+        <span>
+          Outcome: <strong>{inv.data.outcome ?? inv.data.status}</strong>
+          {steps.length > 0 ? ` · ${steps.length} steps streamed` : ""}
+        </span>
+        {reportId ? (
+          <Link className="btn btn-primary" to={`/reports/${reportId}`}>
+            Open report
+          </Link>
+        ) : (
+          <span className="muted">No report id yet — try Refresh if the run just finished.</span>
+        )}
+        <button type="button" className="btn" onClick={() => void inv.refetch()}>
+          Refresh
+        </button>
+      </div>
+
+      <div className="inv-pane-switch tabs" aria-label="Investigation panes">
+        {(
+          [
+            ["steps", "Steps"],
+            ["timeline", "Timeline"],
+            ["hypotheses", "Hypotheses"],
+          ] as const
+        ).map(([id, label]) => (
           <button
-            key={t}
+            key={id}
             type="button"
             className="btn"
-            aria-selected={narrowTab === t}
-            onClick={() => setNarrowTab(t)}
+            aria-selected={activePane === id}
+            onClick={() => setActivePane(id)}
           >
-            {t}
+            {label}
           </button>
         ))}
       </div>
 
-      <div className="investigation">
-        <div className="desktop-only">{stepsPane}</div>
-        <div className="desktop-only">{centerPane}</div>
-        <div className="desktop-only">{rightPane}</div>
+      <div className="investigation investigation-responsive">
+        <div className={activePane === "steps" ? "inv-show" : "inv-hide-narrow"}>{stepsPane}</div>
+        <div className={activePane === "timeline" ? "inv-show" : "inv-hide-narrow"}>{centerPane}</div>
+        <div className={activePane === "hypotheses" ? "inv-show" : "inv-hide-narrow"}>{rightPane}</div>
       </div>
-
-      <div className="mobile-panes">
-        {narrowTab === "steps" && stepsPane}
-        {narrowTab === "center" && centerPane}
-        {narrowTab === "hypotheses" && rightPane}
-      </div>
-
-      <style>{`
-        .mobile-panes { display: none; }
-        @media (max-width: 960px) {
-          .investigation .desktop-only { display: none; }
-          .mobile-panes { display: block; }
-        }
-        @media (min-width: 961px) {
-          .tabs[aria-label="Narrow layout tabs"] { display: none; }
-        }
-      `}</style>
     </div>
   );
 }
