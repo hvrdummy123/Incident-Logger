@@ -5,6 +5,7 @@ import { api, type ReportPayload } from "../lib/api";
 import { resolveCitation, type EvidenceItem } from "../lib/citations";
 import { problemToMessage } from "../lib/errors";
 import { EvidenceDrawer } from "../components/EvidenceDrawer";
+import { ReportCharts, type ReportViz } from "../components/ReportCharts";
 
 type ReportJson = {
   summary?: string;
@@ -23,7 +24,7 @@ type ReportJson = {
   suggested_actions?: Array<{ text: string; type?: string; risk?: string }>;
   data_gaps?: string[];
   open_questions?: string[];
-  contributing_factors?: Array<{ text: string; evidence?: string[] }>;
+  viz?: ReportViz;
   run?: { model?: string; cost_usd?: number; deterministic_only?: boolean; steps?: number };
 };
 
@@ -177,6 +178,8 @@ export function ReportPage() {
           </ul>
         </section>
       )}
+
+      <ReportCharts viz={body.viz} />
 
       <section>
         <h2>Impact</h2>

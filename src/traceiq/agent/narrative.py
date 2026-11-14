@@ -6,14 +6,19 @@ from typing import Any
 
 from traceiq.agent.schema import (
     Action,
+    ErrorSeries,
     Factor,
     Impact,
     Report,
+    ReportViz,
     RootCause,
     RuledOut,
     RunMeta,
+    SeriesPoint,
+    SuspectScore,
     Symptom,
     TimelineItem,
+    TimelineMark,
 )
 
 PROMPT_VERSION = "narrative-v1"
@@ -44,11 +49,134 @@ def _ask_for_more(briefing: dict[str, Any], *, multi_fault: bool) -> list[str]:
             "Dependency / call-graph edges or service catalog links "
             "for blast-radius checks."
         )
-    # Always acknowledge incompleteness
     asks.append(
         "Any logs from the minutes immediately before onset that were rotated or sampled away."
     )
     return asks
+
+
+def _build_viz(briefing: dict[str, Any], *, confidence: float) -> ReportViz:
+    suspects = _top_suspects(briefing, 8)
+    scores = [
+        SuspectScore(service=str(s.get("service")), score=float(s.get("score") or 0.0))
+        for s in suspects
+        if s.get("service")
+    ]
+
+    series_out: list[ErrorSeries] = []
+    raw_series = briefing.get("error_series") or {}
+    if isinstance(raw_series, dict):
+        # Prefer top suspect services; fall back to whatever is present.
+        prefer = [s.service for s in scores] or list(raw_series.keys())
+        for svc in prefer[:5]:
+            pts = raw_series.get(svc) or raw_series.get(f"{svc}.error_rate") or []
+            if not isinstance(pts, list) or not pts:
+                continue
+            points: list[SeriesPoint] = []
+            for p in pts:
+                if isinstance(p, (list, tuple)) and len(p) >= 2:
+                    points.append(SeriesPoint(ts_ms=int(p[0]), value=float(p[1])))
+                elif isinstance(p, dict) and "ts_ms" in p:
+                    points.append(
+                        SeriesPoint(ts_ms=int(p["ts_ms"]), value=float(p.get("value") or 0))
+                    )
+            if points:
+                series_out.append(ErrorSeries(service=str(svc).split(".", 1)[0], points=points))
+
+    marks: list[TimelineMark] = []
+    if briefing.get("reference_ms"):
+        marks.append(
+            TimelineMark(
+                ts_ms=int(briefing["reference_ms"]),
+                label="Estimated onset",
+                kind="onset",
+            )
+        )
+    for h in (briefing.get("change_hits") or [])[:8]:
+        if not isinstance(h, dict):
+            continue
+        ts = h.get("ts_ms")
+        if ts is None:
+            continue
+        marks.append(
+            TimelineMark(
+                ts_ms=int(ts),
+                label=f"change:{h.get('service') or '?'}",
+                kind="change",
+            )
+        )
+    for a in (briefing.get("anomalies") or [])[:6]:
+        if not isinstance(a, dict):
+            continue
+        ts = a.get("onset_ts") or a.get("ts_ms")
+        if ts is None:
+            continue
+        series = str(a.get("series") or "error")
+        marks.append(
+            TimelineMark(
+                ts_ms=int(ts),
+                label=f"anomaly:{series.split('.', 1)[0]}",
+                kind="error",
+            )
+        )
+    marks.sort(key=lambda m: m.ts_ms)
+
+    return ReportViz(
+        suspect_scores=scores,
+        error_series=series_out,
+        timeline_marks=marks[:20],
+        confidence=float(confidence),
+    )
+
+
+def apply_citations(report: Report, cites: dict[str, str]) -> Report:
+    """Attach tool evidence ids produced during the investigation loop."""
+    briefing_eid = cites.get("briefing")
+    templates_eid = cites.get("templates")
+    changes_eid = cites.get("changes")
+    core = [e for e in (briefing_eid, templates_eid, changes_eid) if e]
+    if not core:
+        return report
+
+    if report.outcome == "root_cause_found" and not report.root_cause.evidence:
+        report.root_cause.evidence = list(core)
+
+    for s in report.impact.symptoms:
+        if not s.evidence:
+            # Template-ish symptoms cite templates; score lines cite briefing.
+            if "Template on" in s.text and templates_eid:
+                s.evidence = [templates_eid]
+            elif briefing_eid:
+                s.evidence = [briefing_eid]
+
+    for t in report.timeline:
+        if not t.evidence:
+            if "Change on" in t.text and changes_eid:
+                t.evidence = [changes_eid]
+            elif "onset" in t.text.lower() and briefing_eid:
+                t.evidence = [briefing_eid]
+            elif core:
+                t.evidence = [core[0]]
+
+    for f in report.contributing_factors:
+        if not f.evidence and briefing_eid:
+            f.evidence = [briefing_eid]
+
+    for r in report.ruled_out:
+        if not r.evidence:
+            if "change" in r.hypothesis.lower() and changes_eid:
+                r.evidence = [changes_eid]
+            elif briefing_eid:
+                r.evidence = [briefing_eid]
+
+    # Drop soft gap if we now have citations
+    if report.root_cause.evidence:
+        report.data_gaps = [
+            g
+            for g in report.data_gaps
+            if "lacks stored evidence citations" not in g
+        ]
+    return report
 
 
 def build_narrative_report(
@@ -56,6 +184,7 @@ def build_narrative_report(
     *,
     model: str,
     deterministic_only: bool = False,
+    cites: dict[str, str] | None = None,
 ) -> Report:
     suspects = _top_suspects(briefing, 6)
     conf = float(briefing.get("confidence") or 0.0)
@@ -73,7 +202,6 @@ def build_narrative_report(
     multi_fault = bool(second and second_score >= max(1.5, top_score * 0.55))
     found = bool(top_svc) and (conf >= 0.12 or top_score >= 1.2)
 
-    # Impact / symptoms from templates + suspect list
     symptoms: list[Symptom] = []
     for s in suspects[:4]:
         svc = str(s.get("service") or "")
@@ -129,10 +257,15 @@ def build_narrative_report(
             ),
         )
 
+    # Contributing = material secondary suspects (not weak decoys)
     contributing: list[Factor] = []
-    for s in suspects[1:5] if found else suspects[:4]:
+    contrib_svcs: set[str] = set()
+    for s in suspects[1:6]:
         svc = str(s.get("service") or "")
-        if not svc:
+        score = float(s.get("score") or 0.0)
+        if not svc or svc == top_svc:
+            continue
+        if score < max(2.0, top_score * 0.35):
             continue
         bits = []
         for c in (s.get("contributions") or [])[:3]:
@@ -141,7 +274,7 @@ def build_narrative_report(
         contributing.append(
             Factor(
                 text=(
-                    f"{svc} remains in play (score {float(s.get('score') or 0):.2f})"
+                    f"{svc} remains in play (score {score:.2f})"
                     + (f" — {'; '.join(bits)}" if bits else "")
                     + (
                         ". May be cascade, concurrent fault, or shared dependency."
@@ -152,11 +285,19 @@ def build_narrative_report(
                 evidence=[],
             )
         )
+        contrib_svcs.add(svc)
+        if len(contributing) >= 3:
+            break
 
+    # Ruled out = weak suspects / decoy changes — never overlap contributing
     ruled: list[RuledOut] = []
-    for s in suspects[3:6]:
+    ruled_seen: set[str] = set()
+    for s in suspects[1:8]:
         svc = str(s.get("service") or "")
-        if not svc or svc == top_svc:
+        score = float(s.get("score") or 0.0)
+        if not svc or svc == top_svc or svc in contrib_svcs or svc in ruled_seen:
+            continue
+        if score >= max(2.0, top_score * 0.35):
             continue
         ruled.append(
             RuledOut(
@@ -168,10 +309,18 @@ def build_narrative_report(
                 evidence=[],
             )
         )
-    # Explicitly call out classic decoys when present but weak
+        ruled_seen.add(svc)
+
+    decoy_svcs: set[str] = set()
     for h in hits:
         svc = str(h.get("service") or "")
-        if svc and svc != top_svc and str(h.get("reason") or "") == "proximity":
+        if (
+            svc
+            and svc != top_svc
+            and svc not in contrib_svcs
+            and str(h.get("reason") or "") == "proximity"
+            and svc not in decoy_svcs
+        ):
             ruled.append(
                 RuledOut(
                     hypothesis=f"nearby change on {svc}",
@@ -182,6 +331,7 @@ def build_narrative_report(
                     evidence=[],
                 )
             )
+            decoy_svcs.add(svc)
 
     asks = _ask_for_more(briefing, multi_fault=multi_fault)
     if event_count and event_count < 500:
@@ -190,18 +340,18 @@ def build_narrative_report(
         gaps.append("No deploy/config markers found in logs; root cause may predate this file.")
     if multi_fault:
         gaps.append(
-            
-                "Multiple strong suspects — a single root cause is uncertain; "
-                "treat as a multi-factor incident."
-            
+            "Multiple strong suspects — a single root cause is uncertain; "
+            "treat as a multi-factor incident."
         )
-    gaps.extend(
-        g
-        for g in [
-            "No attached metrics time series (error/latency/saturation).",
-            "No traces or change-management export; correlation uses log-embedded markers only.",
-        ]
-        if g not in gaps
+    # Only claim missing metrics if we truly have no series
+    if not (briefing.get("error_series") or {}):
+        gaps.append("No attached metrics time series (error/latency/saturation).")
+    else:
+        gaps.append(
+            "Error-rate series derived from logs only (not golden signals / APM metrics)."
+        )
+    gaps.append(
+        "No traces or change-management export; correlation uses log-embedded markers only."
     )
 
     if found and not multi_fault:
@@ -297,10 +447,11 @@ def build_narrative_report(
         ]
 
     services = [str(s.get("service")) for s in suspects[:5] if s.get("service")]
-    return Report(
+    viz_conf = min(0.85, max(conf, 0.35 if found else conf))
+    report = Report(
         summary=summary,
         outcome=outcome,  # type: ignore[arg-type]
-        confidence=min(0.85, max(conf, 0.35 if found else conf)),
+        confidence=viz_conf,
         impact=Impact(services=services, symptoms=symptoms),
         timeline=timeline,
         root_cause=RootCause(
@@ -315,6 +466,7 @@ def build_narrative_report(
         suggested_actions=actions,
         data_gaps=gaps,
         open_questions=asks,
+        viz=_build_viz(briefing, confidence=viz_conf),
         run=RunMeta(
             model=model,
             prompt_version=PROMPT_VERSION,
@@ -324,3 +476,6 @@ def build_narrative_report(
             deterministic_only=deterministic_only,
         ),
     )
+    if cites:
+        report = apply_citations(report, cites)
+    return report

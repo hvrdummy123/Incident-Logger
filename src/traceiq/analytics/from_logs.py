@@ -185,6 +185,22 @@ def briefing_from_log_text(text: str) -> dict[str, Any]:
     d = briefing.to_dict()
     d["event_count"] = len(events)
     d["reference_ms"] = reference_ms
+    # Downsample per-service error rates for interactive charts (top by peak rate).
+    peaks: list[tuple[str, float, list[tuple[int, float]]]] = []
+    for name, series in metric_series.items():
+        svc = name.split(".", 1)[0]
+        if not series:
+            continue
+        peak = max(v for _, v in series)
+        # Cap to ~48 points for UI payload size
+        step = max(1, len(series) // 48)
+        sampled = series[::step][:48]
+        peaks.append((svc, peak, sampled))
+    peaks.sort(key=lambda x: x[1], reverse=True)
+    d["error_series"] = {
+        svc: [{"ts_ms": ts, "value": round(val, 4)} for ts, val in sampled]
+        for svc, _, sampled in peaks[:6]
+    }
     if not d.get("suspects"):
         d["data_gaps"] = list(d.get("data_gaps") or []) + [
             "no ranked suspects from uploaded logs"

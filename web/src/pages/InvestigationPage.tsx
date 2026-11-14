@@ -1,9 +1,10 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
-import { api, type Investigation } from "../lib/api";
+import { api, type Investigation, type ReportPayload } from "../lib/api";
 import { problemToMessage } from "../lib/errors";
 import { layoutServiceGraph } from "../lib/graphLayout";
+import { ReportCharts, type ReportViz } from "../components/ReportCharts";
 
 type StepEvent = { seq: number; kind: string; name: string; args?: Record<string, unknown> };
 
@@ -11,7 +12,7 @@ export function InvestigationPage() {
   const { investigationId = "" } = useParams();
   const [steps, setSteps] = useState<StepEvent[]>([]);
   const [follow, setFollow] = useState(true);
-  const [tab, setTab] = useState<"timeline" | "graph">("timeline");
+  const [tab, setTab] = useState<"timeline" | "graph" | "charts">("timeline");
   const [activePane, setActivePane] = useState<"steps" | "timeline" | "hypotheses">("steps");
   const streamRef = useRef<HTMLDivElement>(null);
   const [streamError, setStreamError] = useState<string | null>(null);
@@ -20,6 +21,12 @@ export function InvestigationPage() {
     queryKey: ["investigation", investigationId],
     queryFn: () => api<Investigation>(`/v1/investigations/${investigationId}`),
     enabled: Boolean(investigationId),
+  });
+
+  const report = useQuery({
+    queryKey: ["report", inv.data?.report_id],
+    queryFn: () => api<ReportPayload>(`/v1/reports/${inv.data!.report_id}`),
+    enabled: Boolean(inv.data?.report_id),
   });
 
   useEffect(() => {
@@ -77,18 +84,36 @@ export function InvestigationPage() {
     }
   }, [steps, follow]);
 
+  const viz = (report.data?.json as { viz?: ReportViz } | undefined)?.viz;
+  const impactServices =
+    ((report.data?.json as { impact?: { services?: string[] } } | undefined)?.impact?.services) ??
+    [];
+
   const graph = useMemo(() => {
-    const nodes = [
-      { id: "gateway", score: 0.2 },
-      { id: "checkout", score: 0.8 },
-      { id: "payments", score: 0.4 },
-    ];
-    const edges = [
-      { from: "gateway", to: "checkout", weight: 12 },
-      { from: "checkout", to: "payments", weight: 9 },
-    ];
+    const scores = viz?.suspect_scores ?? [];
+    const nodes =
+      scores.length > 0
+        ? scores.map((s) => ({ id: s.service, score: Math.min(1, s.score / 10) }))
+        : impactServices.length > 0
+          ? impactServices.map((id, i) => ({ id, score: Math.max(0.15, 0.9 - i * 0.15) }))
+          : [
+              { id: "gateway", score: 0.2 },
+              { id: "checkout", score: 0.8 },
+              { id: "payments", score: 0.4 },
+            ];
+    const edges =
+      nodes.length >= 2
+        ? nodes.slice(0, -1).map((n, i) => ({
+            from: n.id,
+            to: nodes[i + 1]!.id,
+            weight: 8 + (nodes.length - i),
+          }))
+        : [
+            { from: "gateway", to: "checkout", weight: 12 },
+            { from: "checkout", to: "payments", weight: 9 },
+          ];
     return layoutServiceGraph(nodes, edges, 360, 200);
-  }, []);
+  }, [viz, impactServices]);
 
   if (inv.isLoading) return <div className="skeleton" style={{ height: 160 }} />;
   if (inv.isError || !inv.data) {
@@ -147,32 +172,56 @@ export function InvestigationPage() {
         >
           Service graph
         </button>
+        <button
+          type="button"
+          className="btn"
+          role="tab"
+          aria-selected={tab === "charts"}
+          onClick={() => setTab("charts")}
+        >
+          Charts
+        </button>
       </div>
       <div className="pane-body">
-        {tab === "timeline" ? (
+        {tab === "charts" ? (
+          viz ? (
+            <ReportCharts viz={viz} />
+          ) : (
+            <p className="muted">Charts appear when the report is ready.</p>
+          )
+        ) : tab === "timeline" ? (
           <svg width="100%" height="200" role="img" aria-label="Service timeline swimlanes">
-            <title>Timeline swimlanes (placeholder until briefing is attached)</title>
-            {["gateway", "checkout", "payments"].map((svc, i) => (
-              <g key={svc}>
-                <text x="4" y={28 + i * 56} fill="currentColor" fontSize="12">
-                  {svc}
-                </text>
-                <line
-                  x1="80"
-                  y1={24 + i * 56}
-                  x2="95%"
-                  y2={24 + i * 56}
-                  stroke="var(--border)"
-                />
-                <rect
-                  x="120"
-                  y={14 + i * 56}
-                  width="40"
-                  height="20"
-                  fill="color-mix(in srgb, var(--bad) 35%, transparent)"
-                />
-              </g>
-            ))}
+            <title>Timeline swimlanes from suspect ranking</title>
+            {(
+              viz?.suspect_scores?.map((s) => s.service) ??
+              (impactServices.length ? impactServices : ["gateway", "checkout", "payments"])
+            )
+              .slice(0, 5)
+              .map((svc, i) => {
+                const score = viz?.suspect_scores?.find((s) => s.service === svc)?.score ?? 3;
+                const width = Math.min(200, 40 + score * 18);
+                return (
+                  <g key={svc}>
+                    <text x="4" y={28 + i * 36} fill="currentColor" fontSize="12">
+                      {svc}
+                    </text>
+                    <line
+                      x1="100"
+                      y1={24 + i * 36}
+                      x2="95%"
+                      y2={24 + i * 36}
+                      stroke="var(--border)"
+                    />
+                    <rect
+                      x="140"
+                      y={14 + i * 36}
+                      width={width}
+                      height="18"
+                      fill="color-mix(in srgb, var(--bad) 35%, transparent)"
+                    />
+                  </g>
+                );
+              })}
           </svg>
         ) : (
           <svg width="100%" height="220" role="img" aria-label="Service dependency graph">

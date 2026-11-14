@@ -59,6 +59,36 @@ class RunMeta(BaseModel):
     deterministic_only: bool = False
 
 
+class SuspectScore(BaseModel):
+    service: str
+    score: float
+
+
+class SeriesPoint(BaseModel):
+    ts_ms: int
+    value: float
+
+
+class ErrorSeries(BaseModel):
+    service: str
+    points: list[SeriesPoint] = Field(default_factory=list)
+
+
+class TimelineMark(BaseModel):
+    ts_ms: int
+    label: str
+    kind: Literal["onset", "change", "error"] = "change"
+
+
+class ReportViz(BaseModel):
+    """Chart-ready payload for interactive report UI."""
+
+    suspect_scores: list[SuspectScore] = Field(default_factory=list)
+    error_series: list[ErrorSeries] = Field(default_factory=list)
+    timeline_marks: list[TimelineMark] = Field(default_factory=list)
+    confidence: float = 0.0
+
+
 class Report(BaseModel):
     summary: str
     outcome: Literal["root_cause_found", "abstained"]
@@ -71,6 +101,7 @@ class Report(BaseModel):
     suggested_actions: list[Action] = Field(default_factory=list)
     data_gaps: list[str] = Field(default_factory=list)
     open_questions: list[str] = Field(default_factory=list)
+    viz: ReportViz = Field(default_factory=ReportViz)
     run: RunMeta = Field(default_factory=RunMeta)
 
 

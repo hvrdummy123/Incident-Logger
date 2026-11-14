@@ -34,9 +34,11 @@ class MockProvider:
         scripted: list[dict[str, Any]] | None = None,
         *,
         briefing: dict[str, Any] | None = None,
+        cites: dict[str, str] | None = None,
     ) -> None:
         self.scripted = list(scripted or [])
         self.briefing = briefing
+        self.cites = cites or {}
         self.calls = 0
 
     def complete(self, messages: list[dict[str, str]], *, model: str) -> dict[str, Any]:
@@ -53,7 +55,10 @@ class MockProvider:
 
         briefing = self.briefing or _extract_briefing(messages)
         report_model = build_narrative_report(
-            briefing, model=model, deterministic_only=False
+            briefing,
+            model=model,
+            deterministic_only=False,
+            cites=self.cites or None,
         )
         report = report_model.model_dump()
         return {

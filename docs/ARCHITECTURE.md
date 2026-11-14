@@ -2,6 +2,8 @@
 
 Modular monolith: one Python codebase, three processes (`api`, `worker`, `web` static), plus Postgres. Seams are package boundaries (`ingest`, `store`, `analytics`, `agent`, `safety`, `queue`) so a later split is possible without rewriting the domain.
 
+For **design rationale** (problem, why these choices, advantages, improvements), see [`SYSTEM_DESIGN.md`](SYSTEM_DESIGN.md).
+
 ## Context
 
 ```mermaid

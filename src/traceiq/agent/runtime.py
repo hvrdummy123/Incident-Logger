@@ -10,6 +10,7 @@ from typing import Any
 from traceiq.agent.budgets import Budget
 from traceiq.agent.schema import Report, parse_report
 from traceiq.agent.state import Status, can_transition
+from traceiq.agent.narrative import apply_citations
 from traceiq.agent.tools import ToolContext, run_tool
 from traceiq.agent.verify import verify_report
 from traceiq.safety.egress import EgressGateway
@@ -46,10 +47,17 @@ def _system_prompt() -> str:
     return PROMPT_PATH.read_text(encoding="utf-8")
 
 
-def _deterministic_report(briefing: dict[str, Any], *, model: str) -> Report:
+def _deterministic_report(
+    briefing: dict[str, Any],
+    *,
+    model: str,
+    cites: dict[str, str] | None = None,
+) -> Report:
     from traceiq.agent.narrative import build_narrative_report
 
-    return build_narrative_report(briefing, model=model, deterministic_only=True)
+    return build_narrative_report(
+        briefing, model=model, deterministic_only=True, cites=cites
+    )
 
 
 def run_investigation(
@@ -98,10 +106,35 @@ def run_investigation(
             )
 
         transition(Status.BRIEFING)
-        # Briefing already computed by caller — record tool use
-        tr = run_tool(ctx, "get_briefing", {})
-        seq += 1
-        steps.append(Step(seq=seq, kind="tool", name="get_briefing", result=tr.data))
+        # Briefing already computed by caller — record tool use + citeable evidence
+        cites: dict[str, str] = {}
+        for tool_name, tool_args in (
+            ("get_briefing", {}),
+            ("top_templates", {"k": 12}),
+            ("recent_changes", {}),
+        ):
+            tr = run_tool(ctx, tool_name, tool_args)
+            seq += 1
+            steps.append(
+                Step(
+                    seq=seq,
+                    kind="tool",
+                    name=tool_name,
+                    args=tool_args,
+                    result={"ok": tr.ok, "evidence_ids": tr.evidence_ids},
+                )
+            )
+            if tr.evidence_ids:
+                key = {
+                    "get_briefing": "briefing",
+                    "top_templates": "templates",
+                    "recent_changes": "changes",
+                }[tool_name]
+                cites[key] = tr.evidence_ids[0]
+        if hasattr(provider, "briefing") and getattr(provider, "briefing", None) is None:
+            provider.briefing = briefing
+        if hasattr(provider, "cites"):
+            provider.cites = cites
 
         # Degraded path: no model / mock-only forced by gateway policy
         use_model = not (gateway.no_external_llm and provider.name != "mock")
@@ -109,7 +142,7 @@ def run_investigation(
             transition(Status.INVESTIGATING)
         else:
             transition(Status.REPORTING)
-            report = _deterministic_report(briefing, model=model)
+            report = _deterministic_report(briefing, model=model, cites=cites)
             transition(Status.ABSTAINED if report.outcome == "abstained" else Status.DONE)
             return InvestigationResult(
                 status,
@@ -183,7 +216,7 @@ def run_investigation(
             try:
                 resp = gateway.call(provider, model=model, messages=messages, mapping=mapping)
             except PermissionError:
-                report = _deterministic_report(briefing, model=model)
+                report = _deterministic_report(briefing, model=model, cites=cites)
                 report.run.deterministic_only = True
                 if can_transition(status, Status.REPORTING):
                     transition(Status.REPORTING)
@@ -266,12 +299,13 @@ def run_investigation(
 
         transition(Status.VERIFYING)
         if ctx.submitted_report is None:
-            report = _deterministic_report(briefing, model=model)
+            report = _deterministic_report(briefing, model=model, cites=cites)
         else:
             try:
                 report = parse_report(ctx.submitted_report)
             except Exception:  # noqa: BLE001
-                report = _deterministic_report(briefing, model=model)
+                report = _deterministic_report(briefing, model=model, cites=cites)
+            report = apply_citations(report, cites)
 
         if injection_hits:
             report.data_gaps = list(report.data_gaps) + ["injection_suspected in telemetry"]
@@ -284,6 +318,14 @@ def run_investigation(
         report.run.steps = budget.steps
         report.run.tokens = budget.tokens
         report.run.cost_usd = budget.cost_usd
+        # Ensure viz present even if an older mock payload omitted it
+        if not report.viz.suspect_scores and briefing.get("suspects"):
+            from traceiq.agent.narrative import build_narrative_report
+
+            filled = build_narrative_report(
+                briefing, model=model, deterministic_only=report.run.deterministic_only, cites=cites
+            )
+            report.viz = filled.viz
 
         v = verify_report(
             report,
@@ -291,9 +333,7 @@ def run_investigation(
             known_services=known_services
             or {s.get("service", "") for s in (briefing.get("suspects") or [])},
         )
-        # Force abstain only on hard verify failures. Missing citations (common on
-        # BYO/mock before evidence rows are materialized) stays as a found-but-
-        # unverified claim with a confidence cap.
+        # Force abstain only on hard verify failures. Missing citations stay soft.
         if report.outcome == "root_cause_found" and not v.passed:
             soft = {"missing_evidence", "root_cause_no_evidence"}
             hard = [i for i in v.issues if i.code not in soft]
@@ -301,9 +341,10 @@ def run_investigation(
                 report.outcome = "abstained"
             else:
                 report.confidence = min(float(report.confidence), 0.6)
-                report.data_gaps = list(report.data_gaps) + [
-                    "root-cause claim lacks stored evidence citations"
-                ]
+                if "root_cause_no_evidence" in {i.code for i in v.issues}:
+                    report.data_gaps = list(report.data_gaps) + [
+                        "root-cause claim lacks stored evidence citations"
+                    ]
 
         transition(Status.REPORTING)
         final = Status.ABSTAINED if report.outcome == "abstained" else Status.DONE
