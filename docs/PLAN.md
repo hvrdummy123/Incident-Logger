@@ -12,7 +12,7 @@ Working from `incident_agent_prompt.md`. Product name is **TraceIQ**. Original c
 - [x] **M5 Baselines and eval harness**
 - [x] **M6 Safety** — redaction, egress, injection, NO_EXTERNAL_LLM
 - [x] **M7 Agent runtime** — state machine, tools, mock provider, verifier (core)
-- [ ] **M8 API** — REST + tenancy on every route
+- [x] **M8 API** — REST + SSE + webhook + RBAC + cross-tenant 404s
 - [ ] **M9 UI**
 - [ ] **M10 Ops**
 - [ ] **M11 Docs and final verification**
@@ -20,4 +20,4 @@ Working from `incident_agent_prompt.md`. Product name is **TraceIQ**. Original c
 
 ## Current
 
-Next: **M8**.
+Next: **M9** (incident list, BYO wizard, investigation view, report).

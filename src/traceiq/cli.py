@@ -156,6 +156,17 @@ def ingest_cmd(
             console.print(f"wrote dataset → {result.dataset_path}")
 
 
+@app.command("serve")
+def serve_cmd(
+    host: Annotated[str, typer.Option(help="Bind host")] = "127.0.0.1",
+    port: Annotated[int, typer.Option(help="Bind port")] = 8080,
+) -> None:
+    """Run the TraceIQ API (uvicorn)."""
+    import uvicorn
+
+    uvicorn.run("traceiq.api.app:app", host=host, port=port, reload=False)
+
+
 @app.command("redact-preview")
 def redact_preview_cmd(
     file: Annotated[str, typer.Argument(help="File to preview redaction on")],
