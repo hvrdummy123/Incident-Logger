@@ -2,9 +2,10 @@
 
 ## What exists
 
-- Original TraceIQ repo. M0–M2 landed.
+- Original TraceIQ repo. M0–M3 landed.
 - **Tenancy (security):** app-scoped getters, Postgres RLS via `traceiq_app`, filesystem sandbox under `data/<workspace_id>/`. See `docs/THREAT_MODEL.md`. Tests in `tests/security/test_tenancy_isolation.py`.
 - **Ingest:** jsonl/logfmt/nginx/cri/syslog/plain + stack grouping, format detect, Drain, parse report, Parquet writer, DuckDB query, `traceiq ingest --dry-run`.
+- **Analytics:** robust-z/CUSUM, new templates, change correlation, service graph, suspect ranking with contributions, compare_windows, timeline, `build_briefing()`.
 
 ## How to run
 
@@ -24,6 +25,6 @@ uv run traceiq doctor
 
 ## Next 3 steps
 
-1. M3 analytics (anomalies, suspects, timeline, compare_windows).
-2. M4 simulator + demos.
+1. M4 simulator + demo bundles.
+2. M5 eval harness / baselines.
 3. M6/M8 keep hammering cross-tenant API tests as routes appear.
