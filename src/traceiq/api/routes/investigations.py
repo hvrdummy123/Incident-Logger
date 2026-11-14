@@ -6,6 +6,7 @@ from typing import Any
 
 from fastapi import APIRouter, Depends
 from fastapi.responses import StreamingResponse
+from sqlalchemy import select
 from sqlalchemy.orm import Session
 
 from traceiq.agent.budgets import Budget
@@ -148,6 +149,9 @@ def get_investigation(
     inv = session.get(Investigation, investigation_id)
     if inv is None or inv.workspace_id != user.workspace_id:
         raise AppError(404, "Not Found", "Investigation not found")
+    report = session.scalars(
+        select(Report).where(Report.investigation_id == investigation_id)
+    ).first()
     return {
         "id": inv.id,
         "incident_id": inv.incident_id,
@@ -155,6 +159,7 @@ def get_investigation(
         "model": inv.model,
         "outcome": inv.outcome,
         "spent_usd": inv.spent_usd,
+        "report_id": report.id if report else None,
     }
 
 

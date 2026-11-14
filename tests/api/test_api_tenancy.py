@@ -240,7 +240,34 @@ def test_route_role_matrix_covers_mounted_paths() -> None:
     required = {
         "GET /v1/incidents",
         "POST /v1/incidents",
+        "POST /v1/datasets/preview",
         "GET /v1/audit",
         "POST /v1/webhooks/alerts",
     }
     assert required.issubset(set(ROUTE_ROLE_MATRIX))
+
+
+def test_dataset_preview_rejects_binary_and_parses_text(client, engine) -> None:
+    wid, _uid, token = _seed_workspace(engine)
+    headers = {"Authorization": f"Bearer {token}", "X-Workspace-Id": wid}
+
+    bad = client.post(
+        "/v1/datasets/preview",
+        headers=headers,
+        json={"text": "hello\x00world", "filename": "x.bin"},
+    )
+    assert bad.status_code == 400
+
+    ok = client.post(
+        "/v1/datasets/preview",
+        headers=headers,
+        json={
+            "text": '{"ts":"2024-01-01T00:00:00Z","service":"api","level":"info","msg":"ok"}\n',
+            "filename": "app.jsonl",
+        },
+    )
+    assert ok.status_code == 200
+    body = ok.json()
+    assert "parse_report" in body
+    assert "redaction" in body
+    assert body["parse_report"]["lines_read"] >= 1

@@ -78,7 +78,13 @@ def create_incident(
         target=inc.id,
         detail={"title": body.title},
     )
-    return {"id": inc.id, "title": inc.title, "status": inc.status}
+    return {
+        "id": inc.id,
+        "title": inc.title,
+        "severity": inc.severity,
+        "status": inc.status,
+        "source": inc.source,
+    }
 
 
 @router.get("/{incident_id}")

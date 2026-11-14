@@ -56,8 +56,6 @@ def _current_user(
 ) -> AuthUser:
     if creds is None or not creds.credentials:
         raise AppError(401, "Unauthorized", "Missing bearer token")
-    if not workspace_id:
-        raise AppError(400, "Bad Request", "X-Workspace-Id header required")
     try:
         payload = decode_access_token(creds.credentials, secret=settings.jwt_secret)
     except Exception as e:  # noqa: BLE001
@@ -67,20 +65,33 @@ def _current_user(
     if user is None:
         raise AppError(401, "Unauthorized", "User not found")
 
-    # RLS + membership
-    session.execute(
-        text("SELECT set_config('app.workspace_id', :wid, true)"),
-        {"wid": workspace_id},
-    )
-    membership = session.scalar(
-        select(Membership).where(
-            Membership.workspace_id == workspace_id,
-            Membership.user_id == user_id,
+    if workspace_id:
+        session.execute(
+            text("SELECT set_config('app.workspace_id', :wid, true)"),
+            {"wid": workspace_id},
         )
-    )
-    if membership is None:
-        # Do not leak whether the workspace exists
-        raise AppError(404, "Not Found", "Workspace not found")
+        membership = session.scalar(
+            select(Membership).where(
+                Membership.workspace_id == workspace_id,
+                Membership.user_id == user_id,
+            )
+        )
+        if membership is None:
+            # Do not leak whether the workspace exists
+            raise AppError(404, "Not Found", "Workspace not found")
+    else:
+        # Single-membership convenience for local UI login
+        memberships = session.scalars(
+            select(Membership).where(Membership.user_id == user_id)
+        ).all()
+        if len(memberships) != 1:
+            raise AppError(400, "Bad Request", "X-Workspace-Id header required")
+        membership = memberships[0]
+        workspace_id = membership.workspace_id
+        session.execute(
+            text("SELECT set_config('app.workspace_id', :wid, true)"),
+            {"wid": workspace_id},
+        )
 
     set_tenant(
         TenantContext(workspace_id=workspace_id, user_id=user_id, role=membership.role)

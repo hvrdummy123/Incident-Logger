@@ -13,11 +13,11 @@ Working from `incident_agent_prompt.md`. Product name is **TraceIQ**. Original c
 - [x] **M6 Safety** — redaction, egress, injection, NO_EXTERNAL_LLM
 - [x] **M7 Agent runtime** — state machine, tools, mock provider, verifier (core)
 - [x] **M8 API** — REST + SSE + webhook + RBAC + cross-tenant 404s
-- [ ] **M9 UI**
+- [x] **M9 UI** — incident list, BYO wizard, investigation, report (+ Vitest)
 - [ ] **M10 Ops**
 - [ ] **M11 Docs and final verification**
 - [ ] **M12 Stretch**
 
 ## Current
 
-Next: **M9** (incident list, BYO wizard, investigation view, report).
+Next: **M10** (compose images for api/worker/web, CI polish, healthchecks).

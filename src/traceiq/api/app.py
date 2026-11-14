@@ -7,7 +7,16 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from traceiq import __version__
 from traceiq.api.errors import AppError, app_error_handler
-from traceiq.api.routes import admin, auth, health, incidents, investigations, reports, webhooks
+from traceiq.api.routes import (
+    admin,
+    auth,
+    datasets,
+    health,
+    incidents,
+    investigations,
+    reports,
+    webhooks,
+)
 from traceiq.auth.rbac import ROUTE_ROLE_MATRIX, Role
 
 
@@ -31,6 +40,7 @@ def create_app() -> FastAPI:
     # /me lives under auth in prompt as GET /me — also expose top-level
     app.add_api_route("/v1/me", auth.me, methods=["GET"])
     app.include_router(incidents.router, prefix="/v1")
+    app.include_router(datasets.router, prefix="/v1")
     app.include_router(investigations.router, prefix="/v1")
     app.include_router(reports.router, prefix="/v1")
     app.include_router(admin.router, prefix="/v1")
@@ -45,6 +55,7 @@ def create_app() -> FastAPI:
             "POST /v1/auth/login": Role.VIEWER,
             "GET /v1/incidents": Role.VIEWER,
             "POST /v1/incidents": Role.INVESTIGATOR,
+            "POST /v1/datasets/preview": Role.INVESTIGATOR,
             "GET /v1/incidents/{id}": Role.VIEWER,
             "POST /v1/incidents/{id}/investigations": Role.INVESTIGATOR,
             "GET /v1/investigations/{id}": Role.VIEWER,

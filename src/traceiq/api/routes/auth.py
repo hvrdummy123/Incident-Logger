@@ -25,10 +25,22 @@ def login_route(
     session: Session = Depends(db_session),
     settings: Settings = Depends(settings_dep),
 ) -> dict[str, str]:
+    from sqlalchemy import select
+
+    from traceiq.db.models import Membership, User
+
     tokens = login(session, body.email, body.password, jwt_secret=settings.jwt_secret)
     if tokens is None:
         raise AppError(401, "Unauthorized", "Invalid email or password")
-    return tokens
+    user = session.scalar(select(User).where(User.email == body.email))
+    workspace_id = ""
+    if user is not None:
+        memberships = session.scalars(
+            select(Membership).where(Membership.user_id == user.id)
+        ).all()
+        if len(memberships) == 1:
+            workspace_id = memberships[0].workspace_id
+    return {**tokens, "workspace_id": workspace_id}
 
 
 @router.get("/me")

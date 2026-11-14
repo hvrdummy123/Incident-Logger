@@ -9,8 +9,8 @@ cp .env.example .env
 make setup
 make up
 uv run traceiq doctor
-uv run traceiq demo load incident-1-bad-deploy
-# open http://localhost:8080 — demos land after M4/M9
+uv run traceiq serve   # API on :8000
+cd web && npm run dev  # UI on :5173 (proxies /v1)
 ```
 
 ## How this was built
@@ -23,7 +23,7 @@ Product name is **TraceIQ**. The installable distribution is `traceiq-incident` 
 
 ## Status
 
-Early scaffolding (M0). See `docs/PLAN.md` and `docs/HANDOFF.md`.
+**M0–M9 core** landed (API + UI: incidents, BYO wizard, investigation, report). See `docs/PLAN.md` and `docs/HANDOFF.md`.
 
 ## License
 
