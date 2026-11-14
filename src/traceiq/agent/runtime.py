@@ -157,6 +157,47 @@ def run_investigation(
                 return InvestigationResult(
                     status, None, steps, {}, bool(injection_hits), gateway.spent_usd
                 )
+            # Compact + rounded floats (long decimals can trip card redaction).
+            def _round_obj(obj: Any) -> Any:
+                if isinstance(obj, float):
+                    return round(obj, 4)
+                if isinstance(obj, list):
+                    return [_round_obj(x) for x in obj]
+                if isinstance(obj, dict):
+                    return {k: _round_obj(v) for k, v in obj.items()}
+                return obj
+
+            compact_briefing = _round_obj(
+                {
+                    "suspects": [
+                        {
+                            "service": s.get("service"),
+                            "score": s.get("score"),
+                            "contributions": [
+                                {
+                                    "kind": c.get("kind"),
+                                    "detail": str(c.get("detail") or "")[:80],
+                                    "points": c.get("points"),
+                                }
+                                for c in (s.get("contributions") or [])[:4]
+                            ],
+                        }
+                        for s in (briefing.get("suspects") or [])[:8]
+                    ],
+                    "confidence": briefing.get("confidence"),
+                    "change_hits": (briefing.get("change_hits") or [])[:8],
+                    "new_templates": [
+                        {
+                            "service": t.get("service"),
+                            "pattern": str(t.get("pattern") or "")[:120],
+                            "count_after": t.get("count_after"),
+                        }
+                        for t in (briefing.get("new_templates") or [])[:8]
+                    ],
+                    "data_gaps": (briefing.get("data_gaps") or [])[:8],
+                    "event_count": briefing.get("event_count"),
+                }
+            )
             messages = [
                 {"role": "system", "content": _system_prompt()},
                 {
@@ -164,7 +205,7 @@ def run_investigation(
                     "content": (
                         "Investigate this incident. Briefing follows in an untrusted block.\n"
                         "<UNTRUSTED>\n"
-                        + json.dumps(briefing)[:8000]
+                        + json.dumps(compact_briefing, default=str)
                         + "\n</UNTRUSTED>"
                     ),
                 },
@@ -280,9 +321,19 @@ def run_investigation(
             known_services=known_services
             or {s.get("service", "") for s in (briefing.get("suspects") or [])},
         )
-        # Drop unsupported narrative bits already listed; force abstain if needed
+        # Force abstain only on hard verify failures. Missing citations (common on
+        # BYO/mock before evidence rows are materialized) stays as a found-but-
+        # unverified claim with a confidence cap.
         if report.outcome == "root_cause_found" and not v.passed:
-            report.outcome = "abstained"
+            soft = {"missing_evidence", "root_cause_no_evidence"}
+            hard = [i for i in v.issues if i.code not in soft]
+            if hard:
+                report.outcome = "abstained"
+            else:
+                report.confidence = min(float(report.confidence), 0.6)
+                report.data_gaps = list(report.data_gaps) + [
+                    "root-cause claim lacks stored evidence citations"
+                ]
 
         transition(Status.REPORTING)
         final = Status.ABSTAINED if report.outcome == "abstained" else Status.DONE

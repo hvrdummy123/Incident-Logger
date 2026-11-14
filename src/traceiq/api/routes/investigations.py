@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+from pathlib import Path
 from typing import Any
 
 from fastapi import APIRouter, Depends
@@ -12,6 +13,7 @@ from sqlalchemy.orm import Session
 from traceiq.agent.budgets import Budget
 from traceiq.agent.providers.mock import MockProvider
 from traceiq.agent.runtime import run_investigation
+from traceiq.analytics.from_logs import briefing_from_log_text
 from traceiq.api.deps import AuthUser, db_session, require_role, settings_dep
 from traceiq.api.errors import AppError
 from traceiq.api.sse import iter_steps_as_sse
@@ -21,6 +23,7 @@ from traceiq.config import Settings
 from traceiq.db.models import Investigation, InvestigationStep, Report
 from traceiq.ids import new_ulid
 from traceiq.safety.egress import EgressGateway
+from traceiq.store.datasets import dataset_dir
 from traceiq.tenancy.context import TenantContext, set_tenant
 from traceiq.tenancy.scope import get_incident
 
@@ -28,6 +31,31 @@ router = APIRouter(tags=["investigations"])
 
 # In-memory step cache for SSE until workers own the stream (M10).
 _STEP_CACHE: dict[str, list[dict[str, Any]]] = {}
+
+
+def _report_markdown(report: Any) -> str:
+    lines = [
+        f"# {report.summary}",
+        "",
+        f"Outcome: **{report.outcome}** (confidence {report.confidence:.2f})",
+        "",
+        "## Root cause",
+        f"- Service: `{report.root_cause.service or '—'}`",
+        f"- Category: {report.root_cause.category or '—'}",
+        f"- {report.root_cause.explanation or ''}",
+        "",
+        "## Ruled out",
+    ]
+    for r in report.ruled_out:
+        lines.append(f"- {r.hypothesis}: {r.why}")
+    if not report.ruled_out:
+        lines.append("- —")
+    lines.extend(["", "## Data gaps"])
+    for g in report.data_gaps:
+        lines.append(f"- {g}")
+    if not report.data_gaps:
+        lines.append("- —")
+    return "\n".join(lines) + "\n"
 
 
 @router.post("/incidents/{incident_id}/investigations", status_code=201)
@@ -59,8 +87,7 @@ def start_investigation(
     session.add(inv)
     session.flush()
 
-    # Lean sync run with mock/deterministic briefing placeholder
-    briefing = {
+    briefing: dict[str, Any] = {
         "suspects": [],
         "confidence": 0.0,
         "change_hits": [],
@@ -70,6 +97,19 @@ def start_investigation(
         "timeline": [],
         "anomalies": [],
     }
+    snippets: list[str] = []
+    gaps: list[str] = []
+    for ds_id in inc.dataset_ids or []:
+        raw = dataset_dir(settings.data_dir, user.workspace_id, str(ds_id)) / "raw.log"
+        if not raw.is_file():
+            gaps.append(f"dataset {ds_id} missing raw.log")
+            continue
+        text = Path(raw).read_text(encoding="utf-8", errors="replace")
+        snippets.append(text[:4000])
+        briefing = briefing_from_log_text(text)
+    if gaps:
+        briefing["data_gaps"] = list(briefing.get("data_gaps") or []) + gaps
+
     gw = EgressGateway(
         no_external_llm=settings.no_external_llm or provider_name == "mock",
         allowlist_hosts=settings.model_allowlist_hosts(),
@@ -78,9 +118,10 @@ def start_investigation(
     result = run_investigation(
         briefing=briefing,
         gateway=gw,
-        provider=MockProvider(),
+        provider=MockProvider(briefing=briefing),
         model=model_id,
         budget=Budget(max_cost_usd=settings.default_budget_usd),
+        untrusted_log_snippets=snippets,
     )
 
     steps_out: list[dict[str, Any]] = []
@@ -116,7 +157,7 @@ def start_investigation(
                 workspace_id=user.workspace_id,
                 investigation_id=inv_id,
                 json_body=result.report.model_dump(),
-                markdown=result.report.summary,
+                markdown=_report_markdown(result.report),
                 verification_json=result.verification,
             )
         )

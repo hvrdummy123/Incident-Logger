@@ -46,6 +46,8 @@ export function ByoWizardPage() {
           title: title || `BYO: ${fileName || "upload"}`,
           severity,
           source: "upload",
+          filename: fileName || "upload.log",
+          log_text: text,
         }),
       }),
     onSuccess: (inc) => navigate(`/incidents/${inc.id}`),

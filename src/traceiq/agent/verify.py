@@ -52,7 +52,6 @@ def verify_report(
     if report.outcome == "root_cause_found":
         if not report.root_cause.evidence:
             issues.append(VerifyIssue("root_cause_no_evidence", "root cause lacks evidence ids"))
-            report.outcome = "abstained"
         else:
             check_ids(report.root_cause.evidence, "root_cause")
         if (
@@ -66,9 +65,8 @@ def verify_report(
                     f"service {report.root_cause.service} not in known services",
                 )
             )
-        # every cited evidence must exist
+        # Caller decides whether missing citations force abstain.
         if any(i.code == "missing_evidence" and i.detail.startswith("root_cause") for i in issues):
-            report.outcome = "abstained"
             issues.append(VerifyIssue("forced_abstain", "unverifiable root cause"))
 
     passed = not any(
