@@ -159,12 +159,20 @@ def ingest_cmd(
 @app.command("serve")
 def serve_cmd(
     host: Annotated[str, typer.Option(help="Bind host")] = "127.0.0.1",
-    port: Annotated[int, typer.Option(help="Bind port")] = 8080,
+    port: Annotated[int, typer.Option(help="Bind port")] = 8000,
 ) -> None:
     """Run the TraceIQ API (uvicorn)."""
     import uvicorn
 
     uvicorn.run("traceiq.api.app:app", host=host, port=port, reload=False)
+
+
+@app.command("worker")
+def worker_cmd() -> None:
+    """Run the job worker loop."""
+    from traceiq.worker_main import main
+
+    main()
 
 
 @app.command("redact-preview")

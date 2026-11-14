@@ -10,13 +10,87 @@ services:
       - "55432:5432"
     volumes:
       - traceiq_pg:/var/lib/postgresql/data
+      - ./scripts/init_app_role.sql:/docker-entrypoint-initdb.d/20-app-role.sql:ro
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U traceiq -d traceiq"]
       interval: 5s
       timeout: 5s
       retries: 10
 
-  # api / worker / web arrive in M8–M10; Postgres alone unblocks M1 tests.
+  migrate:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      TRACEIQ_DATABASE_URL: postgresql+psycopg://traceiq:traceiq@postgres:5432/traceiq
+      TRACEIQ_MIGRATE_URL: postgresql+psycopg://traceiq:traceiq@postgres:5432/traceiq
+      TRACEIQ_JWT_SECRET: ${TRACEIQ_JWT_SECRET:-dev-compose-jwt-secret-change-me}
+      TRACEIQ_REDACTION_KEY: ${TRACEIQ_REDACTION_KEY:-dev-compose-redaction-key}
+    depends_on:
+      postgres:
+        condition: service_healthy
+    entrypoint: ["alembic", "upgrade", "head"]
+    restart: "no"
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      TRACEIQ_DATABASE_URL: postgresql+psycopg://traceiq_app:traceiq@postgres:5432/traceiq
+      TRACEIQ_DATA_DIR: /data
+      TRACEIQ_JWT_SECRET: ${TRACEIQ_JWT_SECRET:-dev-compose-jwt-secret-change-me}
+      TRACEIQ_REDACTION_KEY: ${TRACEIQ_REDACTION_KEY:-dev-compose-redaction-key}
+      TRACEIQ_MODEL: ${TRACEIQ_MODEL:-mock:mock-v1}
+      TRACEIQ_NO_EXTERNAL_LLM: ${TRACEIQ_NO_EXTERNAL_LLM:-1}
+    volumes:
+      - traceiq_data:/data
+    ports:
+      - "8000:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+      migrate:
+        condition: service_completed_successfully
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://127.0.0.1:8000/v1/healthz"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 20s
+
+  worker:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      TRACEIQ_DATABASE_URL: postgresql+psycopg://traceiq_app:traceiq@postgres:5432/traceiq
+      TRACEIQ_DATA_DIR: /data
+      TRACEIQ_JWT_SECRET: ${TRACEIQ_JWT_SECRET:-dev-compose-jwt-secret-change-me}
+      TRACEIQ_REDACTION_KEY: ${TRACEIQ_REDACTION_KEY:-dev-compose-redaction-key}
+      TRACEIQ_MODEL: ${TRACEIQ_MODEL:-mock:mock-v1}
+      TRACEIQ_NO_EXTERNAL_LLM: ${TRACEIQ_NO_EXTERNAL_LLM:-1}
+    volumes:
+      - traceiq_data:/data
+    command: ["python", "-m", "traceiq.worker_main"]
+    depends_on:
+      postgres:
+        condition: service_healthy
+      migrate:
+        condition: service_completed_successfully
+    healthcheck:
+      disable: true
+
+  web:
+    build:
+      context: ./web
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    depends_on:
+      api:
+        condition: service_healthy
 
 volumes:
   traceiq_pg:
+  traceiq_data:

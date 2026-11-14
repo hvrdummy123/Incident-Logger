@@ -22,8 +22,12 @@ jobs:
           --health-timeout 5s
           --health-retries 10
     env:
-      TRACEIQ_DATABASE_URL: postgresql+psycopg://traceiq:traceiq@localhost:5432/traceiq
-      # CI service maps container 5432 → host 5432; local compose uses host 5433.
+      TRACEIQ_PG_HOST: localhost
+      TRACEIQ_PG_PORT: "5432"
+      TRACEIQ_ADMIN_DATABASE_URL: postgresql+psycopg://traceiq:traceiq@localhost:5432/traceiq
+      TRACEIQ_APP_DATABASE_URL: postgresql+psycopg://traceiq_app:traceiq@localhost:5432/traceiq
+      TRACEIQ_DATABASE_URL: postgresql+psycopg://traceiq_app:traceiq@localhost:5432/traceiq
+      TRACEIQ_MIGRATE_URL: postgresql+psycopg://traceiq:traceiq@localhost:5432/traceiq
       TRACEIQ_JWT_SECRET: ci-test-secret-not-for-prod
       TRACEIQ_REDACTION_KEY: ci-redaction-key
       TRACEIQ_MODEL: mock:mock-v1
@@ -34,6 +38,13 @@ jobs:
         with:
           python-version: "3.12"
       - run: uv sync --extra dev
+      - name: Init app role + migrate
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq postgresql-client
+          PGPASSWORD=traceiq psql -h localhost -U traceiq -d traceiq -f scripts/init_app_role.sql
+          uv run alembic upgrade head
+          PGPASSWORD=traceiq psql -h localhost -U traceiq -d traceiq -c \
+            "GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA public TO traceiq_app;"
       - run: uv run ruff check src tests
       - run: uv run mypy src/traceiq
       - run: uv run pytest -n auto --ignore=tests/perf --ignore=tests/chaos --ignore=tests/e2e
@@ -51,5 +62,16 @@ jobs:
           node-version: "22"
           cache: npm
           cache-dependency-path: web/package-lock.json
-      - run: |
-          if [ -f package.json ]; then npm ci && npx tsc --noEmit && npm test --if-present; else echo "web package not ready yet"; fi
+      - run: npm ci
+      - run: npx tsc --noEmit
+      - run: npm test
+      - run: npm run build
+
+  images:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build API image
+        run: docker build -t traceiq-api:ci .
+      - name: Build web image
+        run: docker build -t traceiq-web:ci ./web

@@ -14,10 +14,10 @@ Working from `incident_agent_prompt.md`. Product name is **TraceIQ**. Original c
 - [x] **M7 Agent runtime** — state machine, tools, mock provider, verifier (core)
 - [x] **M8 API** — REST + SSE + webhook + RBAC + cross-tenant 404s
 - [x] **M9 UI** — incident list, BYO wizard, investigation, report (+ Vitest)
-- [ ] **M10 Ops**
+- [x] **M10 Ops** — compose api/worker/web, Dockerfiles, CI image build, RUNBOOK
 - [ ] **M11 Docs and final verification**
 - [ ] **M12 Stretch**
 
 ## Current
 
-Next: **M10** (compose images for api/worker/web, CI polish, healthchecks).
+Next: **M11** (ARCHITECTURE diagrams, REPORT.md with real-run numbers, held-out eval).

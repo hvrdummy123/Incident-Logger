@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+import os
+
 import pytest
 from sqlalchemy import create_engine, text
 from sqlalchemy.orm import Session, sessionmaker
@@ -14,8 +16,16 @@ from traceiq.tenancy.scope import get_dataset, get_incident
 
 pytestmark = pytest.mark.postgres
 
-ADMIN_URL = "postgresql+psycopg://traceiq:traceiq@localhost:55432/traceiq"
-APP_URL = "postgresql+psycopg://traceiq_app:traceiq@localhost:55432/traceiq"
+_PG_HOST = os.environ.get("TRACEIQ_PG_HOST", "localhost")
+_PG_PORT = os.environ.get("TRACEIQ_PG_PORT", "55432")
+ADMIN_URL = (
+    os.environ.get("TRACEIQ_ADMIN_DATABASE_URL")
+    or f"postgresql+psycopg://traceiq:traceiq@{_PG_HOST}:{_PG_PORT}/traceiq"
+)
+APP_URL = (
+    os.environ.get("TRACEIQ_APP_DATABASE_URL")
+    or f"postgresql+psycopg://traceiq_app:traceiq@{_PG_HOST}:{_PG_PORT}/traceiq"
+)
 
 
 @pytest.fixture(scope="module")
