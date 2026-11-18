@@ -121,7 +121,7 @@ Milestones **M0–M11** are in place (compose, UI, measured notes in [`REPORT.md
 
 ## How this was built
 
-Specified, reviewed, and tested by a human; implemented with AI coding agents in Cursor.
+Built and maintained by **hvrdummy123**.
 
 ## License
 
